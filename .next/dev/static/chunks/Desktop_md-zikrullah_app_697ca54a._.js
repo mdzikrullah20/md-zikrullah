@@ -1573,7 +1573,7 @@ function Skills() {
                         },
                         className: "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 lg:gap-8",
                         children: skills.map((skill, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                variants: itemVariants,
+                                // variants={itemVariants}
                                 whileHover: {
                                     y: -12,
                                     scale: 1.05,
@@ -2026,7 +2026,7 @@ function Contact() {
                                                         value: formData.message,
                                                         onChange: handleChange,
                                                         required: true,
-                                                        rows: "6",
+                                                        // rows="6"
                                                         className: "w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all resize-none",
                                                         placeholder: "Tell me about your project..."
                                                     }, void 0, false, {

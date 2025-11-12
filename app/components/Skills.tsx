@@ -194,7 +194,7 @@ function Skills() {
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              variants={itemVariants}
+              // variants={itemVariants}
               whileHover={{
                 y: -12,
                 scale: 1.05,
