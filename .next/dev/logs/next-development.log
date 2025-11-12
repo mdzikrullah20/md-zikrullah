@@ -1,0 +1,11 @@
+[00:00:01.498] Server  LOG      ✓ Ready in 1337ms
+[00:00:04.366] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:00:04.939] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.245] Browser WARN    Image with src "/images/hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:05.245] Browser WARN    Image with src "/images/hero.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:05.245] Browser WARN    Image with src "/images/zikrullahone.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:07.844] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project2.jpg" "received" null
+[00:00:07.845] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project1.jpg" "received" null
+[00:00:07.950] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project3.jpg" "received" null
+[00:00:07.951] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project4.jpg" "received" null
