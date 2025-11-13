@@ -16,3 +16,94 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [00:00:05.357] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project2.jpg" "received" null
 [00:00:05.517] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project3.jpg" "received" null
 [00:00:05.520] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project4.jpg" "received" null
+[00:11:34.747] Server  LOG      ✓ Compiled in 33ms
+[00:11:56.800] Server  LOG      ✓ Compiled in 13ms
+[00:11:57.904] Browser ERROR   ./app/components/about.tsx:269:15
+Parsing ecmascript source code failed
+  267 |                 //   className="grayscale hover:grayscale-0 transition-all duration-500"
+  268 |                 // />
+> 269 |               </motion.div>
+      |               ^
+  270 |             </div>
+  271 |           </motion.div>
+  272 |         </div>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/components/about.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/about.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:11:57.904] Browser ERROR   ./app/components/about.tsx:269:16
+Parsing ecmascript source code failed
+  267 |                 //   className="grayscale hover:grayscale-0 transition-all duration-500"
+  268 |                 // />
+> 269 |               </motion.div>
+      |                ^^^^^^^^^^^^
+  270 |             </div>
+  271 |           </motion.div>
+  272 |         </div>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/components/about.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/about.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:11:57.904] Browser ERROR   ./app/components/about.tsx:269:15
+Parsing ecmascript source code failed
+  267 |                 //   className="grayscale hover:grayscale-0 transition-all duration-500"
+  268 |                 // />
+> 269 |               </motion.div>
+      |               ^
+  270 |             </div>
+  271 |           </motion.div>
+  272 |         </div>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/components/about.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/about.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:11:57.904] Browser ERROR   ./app/components/about.tsx:269:16
+Parsing ecmascript source code failed
+  267 |                 //   className="grayscale hover:grayscale-0 transition-all duration-500"
+  268 |                 // />
+> 269 |               </motion.div>
+      |                ^^^^^^^^^^^^
+  270 |             </div>
+  271 |           </motion.div>
+  272 |         </div>
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/components/about.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/about.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:12:00.852] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
