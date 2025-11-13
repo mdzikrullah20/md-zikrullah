@@ -1,11 +1,18 @@
-[00:00:00.413] Server  LOG      ✓ Ready in 318ms
-[00:00:03.392] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
-[00:00:03.636] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:03.799] Browser WARN    Image with src "/_next/static/media/hero.36f4380f.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:03.799] Browser WARN    Image with src "/images/zikrullahone.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:04.682] Browser WARN    Image with src "/_next/static/media/hero.36f4380f.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:00.391] Server  LOG      ✓ Ready in 297ms
+[00:00:03.725] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:00:04.018] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.136] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.175] Browser WARN    Image with src "/_next/static/media/hero.36f4380f.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:04.313] Browser WARN    Image with src "/images/zikrullahone.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:04.566] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project3.jpg" "received" null
+[00:00:04.568] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project2.jpg" "received" null
+[00:00:04.570] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project1.jpg" "received" null
+[00:00:04.616] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project4.jpg" "received" null
+[00:00:04.709] Browser WARN    Image with src "/_next/static/media/hero.36f4380f.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:00:06.492] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project4.jpg" "received" null
-[00:00:06.493] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project3.jpg" "received" null
-[00:00:06.495] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project1.jpg" "received" null
-[00:00:06.497] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project2.jpg" "received" null
+[00:00:04.904] Browser WARN    Image with src "/_next/static/media/hero.36f4380f.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:04.904] Browser WARN    Image with src "/images/zikrullahone.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:05.356] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project1.jpg" "received" null
+[00:00:05.357] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project2.jpg" "received" null
+[00:00:05.517] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project3.jpg" "received" null
+[00:00:05.520] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/project4.jpg" "received" null

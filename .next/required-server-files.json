@@ -99,7 +99,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/mdazharuddin",
+    "outputFileTracingRoot": "/Users/mdazharuddin/Desktop/md-zikrullah",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -290,12 +290,12 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "/Users/mdazharuddin"
+      "root": "/Users/mdazharuddin/Desktop/md-zikrullah"
     },
     "distDirRoot": ".next"
   },
   "appDir": "/Users/mdazharuddin/Desktop/md-zikrullah",
-  "relativeAppDir": "Desktop/md-zikrullah",
+  "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",
     ".next/server/pages-manifest.json",
