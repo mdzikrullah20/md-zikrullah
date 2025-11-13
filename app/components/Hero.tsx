@@ -146,12 +146,13 @@ export default function Hero() {
         >
           <div className="relative w-84 h-106 sm:w-64 sm:h-64 md:w-100 md:h-100 lg:w-100 lg:h-[500px] rounded-md overflow-hidden cursor-pointer border-none">
             <Image
-              src={hero}
+              src="https://ui-avatars.com/api/?name=Zikrullah&size=128"
               alt="Zikrullah's Profile Picture"
               fill
               style={{ objectFit: "cover" }}
-              className="grayscale hover:grayscale-0 transition-all duration-500"
+              className="grayscale hover:grayscale-0 transition-all duration-500 rounded-2xl"
             />
+
           </div>
         </motion.div>
       </div>
