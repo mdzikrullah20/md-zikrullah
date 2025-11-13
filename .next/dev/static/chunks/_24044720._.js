@@ -1992,7 +1992,7 @@ function Contact() {
                                                         onChange: handleChange,
                                                         required: true,
                                                         className: "w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all",
-                                                        placeholder: "John Doe"
+                                                        placeholder: "M Zikks"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/Contact.tsx",
                                                         lineNumber: 110,
@@ -2023,7 +2023,7 @@ function Contact() {
                                                         onChange: handleChange,
                                                         required: true,
                                                         className: "w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all",
-                                                        placeholder: "john@example.com"
+                                                        placeholder: "zikks@example.com"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/Contact.tsx",
                                                         lineNumber: 126,
@@ -2180,7 +2180,6 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$code$2d$xml$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Code2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/code-xml.js [app-client] (ecmascript) <export default as Code2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$palette$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Palette$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/palette.js [app-client] (ecmascript) <export default as Palette>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/zap.js [app-client] (ecmascript) <export default as Zap>");
@@ -2188,7 +2187,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/book-open.js [app-client] (ecmascript) <export default as BookOpen>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trophy.js [app-client] (ecmascript) <export default as Trophy>");
 "use client";
-;
 ;
 ;
 ;
@@ -2798,20 +2796,7 @@ function AboutPage() {
                                                     duration: 0.3
                                                 }
                                             },
-                                            className: "relative w-64 h-[400px] sm:w-72 sm:h-[450px] md:w-80 md:h-[500px] lg:w-[350px] lg:h-[550px] overflow-hidden cursor-pointer shadow-2xl",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                src: "/images/zikrullahone.png",
-                                                alt: "Zikrullah's Profile Picture",
-                                                fill: true,
-                                                style: {
-                                                    objectFit: 'cover'
-                                                },
-                                                className: "grayscale hover:grayscale-0 transition-all duration-500"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/components/about.tsx",
-                                                lineNumber: 262,
-                                                columnNumber: 17
-                                            }, this)
+                                            className: "relative w-64 h-[400px] sm:w-72 sm:h-[450px] md:w-80 md:h-[500px] lg:w-[350px] lg:h-[550px] overflow-hidden cursor-pointer shadow-2xl"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/about.tsx",
                                             lineNumber: 239,

@@ -1951,7 +1951,7 @@ function Contact() {
                                                         onChange: handleChange,
                                                         required: true,
                                                         className: "w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all",
-                                                        placeholder: "John Doe"
+                                                        placeholder: "M Zikks"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/Contact.tsx",
                                                         lineNumber: 110,
@@ -1982,7 +1982,7 @@ function Contact() {
                                                         onChange: handleChange,
                                                         required: true,
                                                         className: "w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all",
-                                                        placeholder: "john@example.com"
+                                                        placeholder: "zikks@example.com"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/Contact.tsx",
                                                         lineNumber: 126,

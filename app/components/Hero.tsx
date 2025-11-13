@@ -145,13 +145,13 @@ export default function Hero() {
           className="relative lg:w-1/2 flex justify-center items-center order-1 lg:order-2"
         >
           <div className="relative w-84 h-106 sm:w-64 sm:h-64 md:w-100 md:h-100 lg:w-100 lg:h-[500px] rounded-md overflow-hidden cursor-pointer border-none">
-            {/* <Image
+            <Image
               src={hero}
               alt="Zikrullah's Profile Picture"
               fill
               style={{ objectFit: "cover" }}
               className="grayscale hover:grayscale-0 transition-all duration-500"
-            /> */}
+            />
           </div>
         </motion.div>
       </div>
