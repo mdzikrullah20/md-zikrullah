@@ -33,7 +33,7 @@ export default function Projects() {
       title: "E-Commerce Platform",
       description: "A full-stack e-commerce solution with payment integration",
       fullDescription: "A comprehensive e-commerce platform built with modern technologies. Features include user authentication, product management, shopping cart, payment integration with Stripe, order tracking, and admin dashboard.",
-      image: "/images/project1.jpg",
+      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
       technologies: ["Next.js", "TypeScript", "MongoDB", "Stripe", "Tailwind CSS"],
       liveLink: "https://example.com",
       githubLink: "https://github.com/yourusername/project1",
@@ -52,7 +52,7 @@ export default function Projects() {
       title: "Task Management App",
       description: "Collaborative task management tool with real-time updates",
       fullDescription: "A powerful task management application that helps teams collaborate effectively. Built with real-time synchronization, drag-and-drop interface, and advanced filtering options.",
-      image: "/images/project2.jpg",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
       technologies: ["React", "Node.js", "Socket.io", "PostgreSQL", "Redux"],
       liveLink: "https://example.com",
       githubLink: "https://github.com/yourusername/project2",
@@ -71,7 +71,7 @@ export default function Projects() {
       title: "Portfolio Website Builder",
       description: "No-code portfolio builder for creatives and developers",
       fullDescription: "An intuitive portfolio website builder that allows users to create stunning portfolios without writing code. Features customizable templates, drag-and-drop editor, and one-click deployment.",
-      image: "/images/project3.jpg",
+      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
       technologies: ["Next.js", "React", "Tailwind CSS", "Vercel", "Supabase"],
       liveLink: "https://example.com",
       githubLink: "https://github.com/yourusername/project3",
@@ -90,7 +90,7 @@ export default function Projects() {
       title: "Weather Dashboard",
       description: "Real-time weather monitoring with beautiful visualizations",
       fullDescription: "A comprehensive weather dashboard providing real-time weather data with interactive charts and maps. Features location-based forecasts, weather alerts, and historical data analysis.",
-      image: "/images/project4.jpg",
+      image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop",
       technologies: ["React", "TypeScript", "Chart.js", "OpenWeather API", "Material-UI"],
       liveLink: "https://example.com",
       githubLink: "https://github.com/yourusername/project4",
@@ -131,7 +131,7 @@ export default function Projects() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl text-white md:text-5xl font-bold mt-2 ">
+            <h2 className="text-4xl text-white md:text-5xl font-bold mt-2">
               Projects
             </h2>
             <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
@@ -152,18 +152,14 @@ export default function Projects() {
                          transition-all shadow-xl"
               >
                 {/* Project Image */}
-                <div className="relative h-64 overflow-hidden bg-gradient-to-br from-purple-600 to-blue-600 ">
+                <div className="relative h-64 overflow-hidden">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  {/* Placeholder gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-600/80 to-blue-600/80 
-                                flex items-center justify-center">
-                    <Code className="w-16 h-16 text-white/50" />
-                  </div>
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
                 </div>
 
@@ -234,19 +230,14 @@ export default function Projects() {
               </button>
 
               {/* Project Image */}
-              <div className="relative h-80 overflow-hidden rounded-t-2xl bg-gradient-to-br 
-                            from-purple-600 to-blue-600">
+              <div className="relative h-80 overflow-hidden rounded-t-2xl">
                 <Image
                   src={selectedProject.image}
                   alt={selectedProject.title}
                   fill
+                  sizes="(max-width: 1200px) 100vw, 1200px"
                   className="object-cover"
                 />
-                {/* Placeholder gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/80 to-blue-600/80 
-                              flex items-center justify-center">
-                  <Code className="w-24 h-24 text-white/50" />
-                </div>
               </div>
 
               {/* Project Details */}
