@@ -1,9 +1,586 @@
 module.exports = [
-"[project]/Desktop/md-zikrullah/app/components/Hero.tsx [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/Desktop/md-zikrullah/public/images/hero.png (static in ecmascript, tag client)", ((__turbopack_context__) => {
 
-const e = new Error("Could not parse module '[project]/Desktop/md-zikrullah/app/components/Hero.tsx'\n\nUnexpected token. Did you mean `{'>'}` or `&gt;`?");
-e.code = 'MODULE_UNPARSABLE';
-throw e;
+__turbopack_context__.v("/_next/static/media/hero.36f4380f.png");}),
+"[project]/Desktop/md-zikrullah/public/images/hero.png.mjs { IMAGE => \"[project]/Desktop/md-zikrullah/public/images/hero.png (static in ecmascript, tag client)\" } [app-ssr] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$public$2f$images$2f$hero$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/public/images/hero.png (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$public$2f$images$2f$hero$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 768,
+    height: 1110,
+    blurWidth: 6,
+    blurHeight: 8,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAICAYAAADaxo44AAAAuUlEQVR42j2MsQqCUBiFf0W9ePVqIHTJ8Q6uCo7qcmcXF6fAocFncHLxEYJeKoKgKag3iIaGWvzpJ6qznXM+PgCKYRjMdd214zgbqhx+sSxrVdf1SWt9NU1T/Q/O+bLv+33btgfbtiV8NYI0ummaY1mWe8aYpm0Bvu9v4zi+jeM4T9M0SynvBO4gCIJLFEXYdR0Ow4DUUQhxhjAMH0opLIoCq6rCJEkwTdMXeJ73zPMcsyz70AQibfgG2UkvQyHWHLMAAAAASUVORK5CYII="
+};
+}),
+"[project]/Desktop/md-zikrullah/app/components/Hero.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Hero
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowDown$3e$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/node_modules/lucide-react/dist/esm/icons/arrow-down.js [app-ssr] (ecmascript) <export default as ArrowDown>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$github$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Github$3e$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/node_modules/lucide-react/dist/esm/icons/github.js [app-ssr] (ecmascript) <export default as Github>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/node_modules/lucide-react/dist/esm/icons/linkedin.js [app-ssr] (ecmascript) <export default as Linkedin>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/node_modules/lucide-react/dist/esm/icons/mail.js [app-ssr] (ecmascript) <export default as Mail>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$twitter$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Twitter$3e$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/node_modules/lucide-react/dist/esm/icons/twitter.js [app-ssr] (ecmascript) <export default as Twitter>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/node_modules/next/image.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$public$2f$images$2f$hero$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$public$2f$images$2f$hero$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/Desktop/md-zikrullah/public/images/hero.png.mjs { IMAGE => "[project]/Desktop/md-zikrullah/public/images/hero.png (static in ecmascript, tag client)" } [app-ssr] (structured image object with data url, ecmascript)');
+"use client";
+;
+;
+;
+;
+;
+;
+function Hero() {
+    const [text, setText] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    const [isDeleting, setIsDeleting] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [loopNum, setLoopNum] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
+    const [typingSpeed, setTypingSpeed] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(150);
+    const roles = [
+        "Full-Stack Developer",
+        "Frontend Developer",
+        "React.js Specialist",
+        "Next.js Developer",
+        "UI/UX Enthusiast",
+        "Problem Solver",
+        "Clean Code Advocate"
+    ];
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const handleType = ()=>{
+            const currentRole = roles[loopNum % roles.length];
+            if (isDeleting) {
+                setText((prev)=>currentRole.substring(0, prev.length - 1));
+                setTypingSpeed(50);
+            } else {
+                setText((prev)=>currentRole.substring(0, prev.length + 1));
+                setTypingSpeed(150);
+            }
+            if (!isDeleting && text === currentRole) {
+                setTimeout(()=>setIsDeleting(true), 2000);
+            } else if (isDeleting && text === "") {
+                setIsDeleting(false);
+                setLoopNum((prev)=>prev + 1);
+            }
+        };
+        const timer = setTimeout(handleType, typingSpeed);
+        return ()=>clearTimeout(timer);
+    }, [
+        text,
+        isDeleting,
+        loopNum,
+        typingSpeed,
+        roles
+    ]);
+    const scrollToProjects = ()=>{
+        document.getElementById("projects")?.scrollIntoView({
+            behavior: "smooth"
+        });
+    };
+    const socialLinks = [
+        {
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$github$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Github$3e$__["Github"], {
+                className: "w-5 h-5"
+            }, void 0, false, {
+                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                lineNumber: 54,
+                columnNumber: 13
+            }, this),
+            href: "https://github.com/mdzikrullah20",
+            label: "GitHub"
+        },
+        {
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__["Linkedin"], {
+                className: "w-5 h-5"
+            }, void 0, false, {
+                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                lineNumber: 55,
+                columnNumber: 13
+            }, this),
+            href: "https://www.linkedin.com/in/md-zikrullah/",
+            label: "LinkedIn"
+        },
+        {
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$twitter$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Twitter$3e$__["Twitter"], {
+                className: "w-5 h-5"
+            }, void 0, false, {
+                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                lineNumber: 56,
+                columnNumber: 13
+            }, this),
+            href: "https://x.com/MdZikru57949319",
+            label: "Twitter"
+        },
+        {
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                className: "w-5 h-5"
+            }, void 0, false, {
+                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                lineNumber: 57,
+                columnNumber: 13
+            }, this),
+            href: "mailto:work.zikrullah@gmail.com",
+            label: "Email"
+        }
+    ];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "home",
+        className: "relative min-h-screen pt-20 pb-12 flex flex-col justify-center items-center overflow-hidden bg-black",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 overflow-hidden",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                        animate: {
+                            scale: [
+                                1,
+                                1.2,
+                                1
+                            ],
+                            rotate: [
+                                0,
+                                180,
+                                360
+                            ]
+                        },
+                        transition: {
+                            duration: 20,
+                            repeat: Infinity,
+                            ease: "linear"
+                        },
+                        className: "absolute -top-40 -left-40 w-80 h-80 bg-purple-500/30 rounded-full blur-3xl"
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                        lineNumber: 64,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                        animate: {
+                            scale: [
+                                1.2,
+                                1,
+                                1.2
+                            ],
+                            rotate: [
+                                360,
+                                180,
+                                0
+                            ]
+                        },
+                        transition: {
+                            duration: 25,
+                            repeat: Infinity,
+                            ease: "linear"
+                        },
+                        className: "absolute -bottom-40 -right-40 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl"
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                        lineNumber: 69,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                        animate: {
+                            y: [
+                                0,
+                                -30,
+                                0
+                            ]
+                        },
+                        transition: {
+                            duration: 8,
+                            repeat: Infinity,
+                            ease: "easeInOut"
+                        },
+                        className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl"
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                        lineNumber: 74,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                lineNumber: 63,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative z-10 flex flex-col lg:flex-row items-center justify-center max-w-6xl w-full mx-auto px-6 lg:px-8 gap-12 pt-16 pb-20",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "lg:w-1/2 md:text-center lg:text-left order-1 lg:order-1",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                initial: {
+                                    opacity: 0,
+                                    y: 20
+                                },
+                                animate: {
+                                    opacity: 1,
+                                    y: 0
+                                },
+                                transition: {
+                                    duration: 0.5
+                                },
+                                className: "mb-3 lg:mb-4",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-white text-xl font-semibold",
+                                    children: "Hello, It‘s Me"
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                                    lineNumber: 86,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                                lineNumber: 85,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h1, {
+                                initial: {
+                                    opacity: 0,
+                                    y: -50
+                                },
+                                animate: {
+                                    opacity: 1,
+                                    y: 0
+                                },
+                                transition: {
+                                    duration: 0.8,
+                                    delay: 0.2
+                                },
+                                className: "text-3xl text-white sm:text-4xl lg:text-5xl font-bold mb-3 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent leading-tight",
+                                children: "Md Zikrullah"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                                lineNumber: 89,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                initial: {
+                                    opacity: 0
+                                },
+                                animate: {
+                                    opacity: 1
+                                },
+                                transition: {
+                                    delay: 0.5,
+                                    duration: 1
+                                },
+                                className: " flex justify-start mb-3 lg:mb-4  gap-2",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-xl sm:text-2xl md:text-3xl font-bold text-white",
+                                        children: "And I‘m a"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                                        lineNumber: 94,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-xl sm:text-2xl md:text-3xl font-bold text-yellow-500",
+                                        children: [
+                                            text,
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "animate-pulse text-purple-400",
+                                                children: "|"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                                                lineNumber: 97,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                                        lineNumber: 95,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                                lineNumber: 93,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
+                                initial: {
+                                    opacity: 0
+                                },
+                                animate: {
+                                    opacity: 1
+                                },
+                                transition: {
+                                    delay: 0.8,
+                                    duration: 1
+                                },
+                                className: "text-base sm:text-lg md:text-xl text-gray-400 max-w-xl lg:mx-0 mb-4 lg:mb-4 leading-relaxed",
+                                children: "Crafting beautiful, performant web experiences with modern technologies. Passionate about clean code and user-centric design."
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                                lineNumber: 101,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                initial: {
+                                    opacity: 0,
+                                    y: 20
+                                },
+                                animate: {
+                                    opacity: 1,
+                                    y: 0
+                                },
+                                transition: {
+                                    delay: 1,
+                                    duration: 0.8
+                                },
+                                className: "flex flex-wrap gap-4 justify-start lg:justify-start mb-4 lg:mb-4",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
+                                        whileHover: {
+                                            scale: 1.05
+                                        },
+                                        whileTap: {
+                                            scale: 0.95
+                                        },
+                                        onClick: scrollToProjects,
+                                        className: "px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full font-semibold shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 transition-all text-sm sm:text-base cursor-pointer",
+                                        children: "View My Work"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                                        lineNumber: 106,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].a, {
+                                        href: "#contact",
+                                        whileHover: {
+                                            scale: 1.05
+                                        },
+                                        whileTap: {
+                                            scale: 0.95
+                                        },
+                                        className: "px-6 sm:px-8 py-3 sm:py-4 border-2 border-purple-400 text-white rounded-full font-semibold hover:bg-purple-400/10 transition-all text-sm sm:text-base",
+                                        children: "Get In Touch"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                                        lineNumber: 109,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                                lineNumber: 105,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                initial: {
+                                    opacity: 0
+                                },
+                                animate: {
+                                    opacity: 1
+                                },
+                                transition: {
+                                    delay: 1.2,
+                                    duration: 0.8
+                                },
+                                className: "flex gap-6 justify-start lg:justify-start",
+                                children: socialLinks.map((link, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].a, {
+                                        href: link.href,
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        whileHover: {
+                                            scale: 1.2,
+                                            rotate: 5
+                                        },
+                                        whileTap: {
+                                            scale: 0.9
+                                        },
+                                        className: "p-3 lg:mb-4 bg-gray-800/50 backdrop-blur-sm rounded-full text-gray-400 hover:text-purple-400 hover:bg-gray-700/50 transition-all border border-gray-700",
+                                        "aria-label": link.label,
+                                        children: link.icon
+                                    }, index, false, {
+                                        fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                                        lineNumber: 116,
+                                        columnNumber: 15
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                                lineNumber: 114,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                        lineNumber: 84,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            x: 100
+                        },
+                        animate: {
+                            opacity: 1,
+                            x: 0,
+                            y: [
+                                0,
+                                -5,
+                                0
+                            ]
+                        },
+                        transition: {
+                            opacity: {
+                                duration: 0.8
+                            },
+                            x: {
+                                duration: 0.5
+                            },
+                            y: {
+                                duration: 2,
+                                repeat: Infinity,
+                                ease: "easeInOut"
+                            }
+                        },
+                        whileHover: {
+                            scale: 1.05,
+                            rotate: [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            transition: {
+                                duration: 0.3
+                            }
+                        },
+                        className: "relative lg:w-1/2 flex justify-center items-center order-1 lg:order-2",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative w-84 h-106 sm:w-64 sm:h-64 md:w-100 md:h-100 lg:w-100 lg:h-[500px] rounded-md overflow-hidden cursor-pointer border-none",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                src: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$public$2f$images$2f$hero$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$public$2f$images$2f$hero$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+                                alt: "Zikrullah's Profile Picture",
+                                fill: true,
+                                style: {
+                                    objectFit: "cover"
+                                },
+                                className: "grayscale hover:grayscale-0 transition-all duration-500"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                                lineNumber: 148,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                            lineNumber: 147,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                        lineNumber: 124,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                lineNumber: 82,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                initial: {
+                    opacity: 0
+                },
+                animate: {
+                    opacity: 1
+                },
+                transition: {
+                    delay: 1.5,
+                    duration: 1
+                },
+                className: "absolute bottom-4 sm:bottom-10 left-1/2 transform -translate-x-1/2",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
+                    onClick: scrollToProjects,
+                    animate: {
+                        y: [
+                            0,
+                            10,
+                            0
+                        ]
+                    },
+                    transition: {
+                        duration: 1.5,
+                        repeat: Infinity
+                    },
+                    className: "cursor-pointer text-yellow-400 hover:text-purple-300 transition-colors",
+                    "aria-label": "Scroll down",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowDown$3e$__["ArrowDown"], {
+                        className: "w-8 h-8"
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                        lineNumber: 162,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                    lineNumber: 161,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                lineNumber: 160,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                initial: {
+                    opacity: 0
+                },
+                animate: {
+                    opacity: 0.1
+                },
+                transition: {
+                    delay: 2,
+                    duration: 2
+                },
+                className: "absolute top-20 left-10 text-purple-300 font-mono text-sm hidden md:block",
+                children: '<developer>'
+            }, void 0, false, {
+                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                lineNumber: 167,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                initial: {
+                    opacity: 0
+                },
+                animate: {
+                    opacity: 0.1
+                },
+                transition: {
+                    delay: 2.2,
+                    duration: 2
+                },
+                className: "absolute bottom-20 right-10 text-purple-300 font-mono text-sm hidden md:block",
+                children: '</developer>'
+            }, void 0, false, {
+                fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+                lineNumber: 168,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/Desktop/md-zikrullah/app/components/Hero.tsx",
+        lineNumber: 61,
+        columnNumber: 5
+    }, this);
+}
 }),
 "[project]/Desktop/md-zikrullah/app/components/Projects.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -2521,4 +3098,4 @@ function Home() {
 }),
 ];
 
-//# sourceMappingURL=Desktop_md-zikrullah_app_2dc710b8._.js.map
+//# sourceMappingURL=Desktop_md-zikrullah_1af4c924._.js.map

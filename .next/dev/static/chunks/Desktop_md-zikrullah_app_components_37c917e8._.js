@@ -17,8 +17,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/node_modules/lucide-react/dist/esm/icons/briefcase.js [app-client] (ecmascript) <export default as Briefcase>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$code$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Code$3e$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/node_modules/lucide-react/dist/esm/icons/code.js [app-client] (ecmascript) <export default as Code>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/node_modules/lucide-react/dist/esm/icons/sun.js [app-client] (ecmascript) <export default as Sun>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/node_modules/lucide-react/dist/esm/icons/moon.js [app-client] (ecmascript) <export default as Moon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/md-zikrullah/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -262,78 +260,47 @@ function Navbar() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "hidden md:flex items-center gap-4",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                        whileHover: {
-                                            scale: 1.1,
-                                            rotate: 180
-                                        },
-                                        whileTap: {
-                                            scale: 0.9
-                                        },
-                                        onClick: ()=>setIsDarkMode(!isDarkMode),
-                                        className: "p-2 text-gray-400 hover:text-purple-400 transition-colors rounded-lg hover:bg-gray-800/50",
-                                        "aria-label": "Toggle theme",
-                                        children: isDarkMode ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__["Sun"], {
-                                            className: "w-5 h-5"
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
+                                    onClick: ()=>scrollToSection('#contact'),
+                                    whileHover: {
+                                        scale: 1.05
+                                    },
+                                    whileTap: {
+                                        scale: 0.95
+                                    },
+                                    className: "relative px-6 py-2.5 cursor-pointer border-1 text-white text-sm font-semibold rounded-full overflow-hidden group hover:bg-purple-600 hover:border-none ",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "relative z-10",
+                                            children: "Hire Me"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                            lineNumber: 155,
-                                            columnNumber: 31
-                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"], {
-                                            className: "w-5 h-5"
+                                            lineNumber: 157,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                            className: "absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600",
+                                            initial: {
+                                                x: '100%'
+                                            },
+                                            whileHover: {
+                                                x: 0
+                                            },
+                                            transition: {
+                                                duration: 0.3
+                                            }
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                            lineNumber: 155,
-                                            columnNumber: 61
+                                            lineNumber: 158,
+                                            columnNumber: 17
                                         }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                        lineNumber: 148,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                        onClick: ()=>scrollToSection('#contact'),
-                                        whileHover: {
-                                            scale: 1.05
-                                        },
-                                        whileTap: {
-                                            scale: 0.95
-                                        },
-                                        className: "relative px-6 py-2.5 cursor-pointer border-1 text-white text-sm font-semibold rounded-full overflow-hidden group hover:bg-purple-600 hover:border-none ",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "relative z-10",
-                                                children: "Hire Me"
-                                            }, void 0, false, {
-                                                fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                                lineNumber: 165,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                className: "absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600",
-                                                initial: {
-                                                    x: '100%'
-                                                },
-                                                whileHover: {
-                                                    x: 0
-                                                },
-                                                transition: {
-                                                    duration: 0.3
-                                                }
-                                            }, void 0, false, {
-                                                fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                                lineNumber: 166,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                        lineNumber: 159,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
+                                    lineNumber: 151,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
                                 lineNumber: 146,
                                 columnNumber: 13
@@ -367,12 +334,12 @@ function Navbar() {
                                             className: "w-6 h-6"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                            lineNumber: 191,
+                                            lineNumber: 183,
                                             columnNumber: 21
                                         }, this)
                                     }, "close", false, {
                                         fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                        lineNumber: 184,
+                                        lineNumber: 176,
                                         columnNumber: 19
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                         initial: {
@@ -394,22 +361,22 @@ function Navbar() {
                                             className: "w-6 h-6"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                            lineNumber: 201,
+                                            lineNumber: 193,
                                             columnNumber: 21
                                         }, this)
                                     }, "menu", false, {
                                         fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                        lineNumber: 194,
+                                        lineNumber: 186,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                    lineNumber: 182,
+                                    lineNumber: 174,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                lineNumber: 176,
+                                lineNumber: 168,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -448,7 +415,7 @@ function Navbar() {
                             className: "fixed inset-0 bg-black/80 backdrop-blur-sm z-40 md:hidden"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                            lineNumber: 215,
+                            lineNumber: 207,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -478,7 +445,7 @@ function Navbar() {
                                                 children: "Menu"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                                lineNumber: 235,
+                                                lineNumber: 227,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -491,18 +458,18 @@ function Navbar() {
                                                     className: "w-5 h-5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                                    lineNumber: 243,
+                                                    lineNumber: 235,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                                lineNumber: 238,
+                                                lineNumber: 230,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                        lineNumber: 234,
+                                        lineNumber: 226,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -534,7 +501,7 @@ function Navbar() {
                                                                 children: link.icon
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                                                lineNumber: 264,
+                                                                lineNumber: 256,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -542,7 +509,7 @@ function Navbar() {
                                                                 children: link.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                                                lineNumber: 267,
+                                                                lineNumber: 259,
                                                                 columnNumber: 25
                                                             }, this),
                                                             activeSection === link.href.substring(1) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -550,18 +517,18 @@ function Navbar() {
                                                                 className: "ml-auto w-2 h-2 bg-purple-400 rounded-full"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                                                lineNumber: 270,
+                                                                lineNumber: 262,
                                                                 columnNumber: 27
                                                             }, this)
                                                         ]
                                                     }, link.name, true, {
                                                         fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                                        lineNumber: 251,
+                                                        lineNumber: 243,
                                                         columnNumber: 23
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                                lineNumber: 249,
+                                                lineNumber: 241,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -584,57 +551,13 @@ function Navbar() {
                                                 children: "Hire Me"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                                lineNumber: 280,
-                                                columnNumber: 19
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                onClick: ()=>setIsDarkMode(!isDarkMode),
-                                                initial: {
-                                                    opacity: 0,
-                                                    y: 20
-                                                },
-                                                animate: {
-                                                    opacity: 1,
-                                                    y: 0
-                                                },
-                                                transition: {
-                                                    delay: 0.6
-                                                },
-                                                whileTap: {
-                                                    scale: 0.95
-                                                },
-                                                className: "w-full mt-4 flex items-center justify-center gap-3 px-6 py-2 bg-gray-800/50 text-gray-300 rounded-xl hover:bg-gray-800 transition-colors",
-                                                children: [
-                                                    isDarkMode ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__["Sun"], {
-                                                        className: "w-5 h-5"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                                        lineNumber: 300,
-                                                        columnNumber: 35
-                                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"], {
-                                                        className: "w-5 h-5"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                                        lineNumber: 300,
-                                                        columnNumber: 65
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: isDarkMode ? 'Light Mode' : 'Dark Mode'
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                                        lineNumber: 301,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                                lineNumber: 292,
+                                                lineNumber: 272,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                        lineNumber: 248,
+                                        lineNumber: 240,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$md$2d$zikrullah$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -644,30 +567,30 @@ function Navbar() {
                                             children: "© 2025 Esha. All rights reserved."
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                            lineNumber: 307,
+                                            lineNumber: 288,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                        lineNumber: 306,
+                                        lineNumber: 287,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                                lineNumber: 232,
+                                lineNumber: 224,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                            lineNumber: 225,
+                            lineNumber: 217,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true)
             }, void 0, false, {
                 fileName: "[project]/Desktop/md-zikrullah/app/components/Navbar.tsx",
-                lineNumber: 211,
+                lineNumber: 203,
                 columnNumber: 7
             }, this)
         ]

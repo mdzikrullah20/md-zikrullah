@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { ArrowDown, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import Image from "next/image";
+import hero from "@/public/images/hero.png";
 
 export default function Hero() {
   const [text, setText] = useState("");
@@ -11,15 +12,15 @@ export default function Hero() {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
- const roles = [
-  "Full-Stack Developer",
-  "Frontend Developer",
-  "React.js Specialist",
-  "Next.js Developer",
-  "UI/UX Enthusiast",
-  "Problem Solver",
-  "Clean Code Advocate",
-];
+  const roles = [
+    "Full-Stack Developer",
+    "Frontend Developer",
+    "React.js Specialist",
+    "Next.js Developer",
+    "UI/UX Enthusiast",
+    "Problem Solver",
+    "Clean Code Advocate",
+  ];
 
 
   useEffect(() => {
@@ -122,33 +123,33 @@ export default function Hero() {
         {/* Right: Image */}
         <motion.div
           initial={{ opacity: 0, x: 100 }}
-                animate={{
-                  opacity: 1,
-                  x: 0,
-                  y: [0, -5, 0], // Floating motion
-                }}
-                transition={{
-                  opacity: { duration: 0.8 },
-                  x: { duration: 0.5 },
-                  y: {
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }
-                }}
-                whileHover={{
-                  scale: 1.05,
-                  rotate: [0, 0, 0, 0],
-                  transition: { duration: 0.3 }
-                }}
+          animate={{
+            opacity: 1,
+            x: 0,
+            y: [0, -5, 0], // Floating motion
+          }}
+          transition={{
+            opacity: { duration: 0.8 },
+            x: { duration: 0.5 },
+            y: {
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }
+          }}
+          whileHover={{
+            scale: 1.05,
+            rotate: [0, 0, 0, 0],
+            transition: { duration: 0.3 }
+          }}
           className="relative lg:w-1/2 flex justify-center items-center order-1 lg:order-2"
         >
           <div className="relative w-84 h-106 sm:w-64 sm:h-64 md:w-100 md:h-100 lg:w-100 lg:h-[500px] rounded-md overflow-hidden cursor-pointer border-none">
             <Image
-              src="/images/hero.png"
+              src={hero}
               alt="Zikrullah's Profile Picture"
               fill
-              style={{ objectFit: 'cover' }}
+              style={{ objectFit: "cover" }}
               className="grayscale hover:grayscale-0 transition-all duration-500"
             />
           </div>
