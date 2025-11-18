@@ -82,7 +82,7 @@ export default function AboutPage() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-16ss">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-16">
         {/* Main Section - Text Left, Image Right */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-24">
           {/* Left Side - Text Content */}

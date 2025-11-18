@@ -59,7 +59,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen pt-20 pb-12 flex flex-col justify-center items-center overflow-hidden bg-black">
       {/* Animated Background */}
-      <div className="absolute inset-0 overflow-hiddens">
+      <div className="absolute inset-0 overflow-hidden">
         <motion.div
           animate={{ scale: [1, 1.2, 1], rotate: [0, 180, 360] }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
@@ -127,7 +127,7 @@ export default function Hero() {
             x: 0,
             y: [0, -5, 0], // Floating motion
           }}
-          transition={{ 
+          transition={{
             opacity: { duration: 0.8 },
             x: { duration: 0.5 },
             y: {
@@ -145,11 +145,11 @@ export default function Hero() {
         >
           <div className="relative w-84 h-106 sm:w-64 sm:h-64 md:w-100 md:h-100 lg:w-100 lg:h-[500px] rounded-md overflow-hidden cursor-pointer border-none">
             <Image
-    src="/images/hero.png"
-    alt="Zikrullah's Profile Picture"
-    fill
-    className="object-cover grayscale hover:grayscale-0 transition-all duration-500 rounded-2xl"
-  />
+              src="/images/hero.png"
+              alt="Zikrullah's Profile Picture"
+              fill
+              className="object-cover grayscale hover:grayscale-0 transition-all duration-500 rounded-2xl"
+            />
           </div>
         </motion.div>
       </div>
