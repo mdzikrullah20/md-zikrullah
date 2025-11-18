@@ -5,8 +5,8 @@ import Image from "next/image";
 import { Code2, Palette, Zap, Users, BookOpen, Trophy } from "lucide-react";
 
 export default function AboutPage() {
- const skills = [
-  "React.js",
+  const skills = [
+    "React.js",
     "Next.js",
     "TypeScript",
     "JavaScript",
@@ -18,7 +18,7 @@ export default function AboutPage() {
     "UI/UX Design",
     "Responsive Design",
     "Agile Workflow",
-];
+  ];
 
 
   const features = [
@@ -259,13 +259,13 @@ export default function AboutPage() {
                 }}
                 className="relative w-64 h-[400px] sm:w-72 sm:h-[450px] md:w-80 md:h-[500px] lg:w-[350px] lg:h-[550px] overflow-hidden cursor-pointer shadow-2xl"
               >
-               <Image
-  src="/images/zikrullahone.png"
-  alt="Zikrullah's Profile Picture"
-  fill
-  style={{ objectFit: "cover" }}
-  className="grayscale hover:grayscale-0 transition-all duration-500"
-/>
+                <Image
+                  src="/images/zikrullahone.png"
+                  alt="Zikrullah's Profile Picture"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  className="grayscale hover:grayscale-0 transition-all duration-500"
+                />
               </motion.div>
             </div>
           </motion.div>
