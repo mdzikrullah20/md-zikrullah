@@ -63,7 +63,7 @@ export default function AboutPage() {
   return (
     <section id="about" className="relative min-h-screen pt-20 pb-12 bg-black overflow-hidden">
       {/* Animated Background */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden ">
         <motion.div
           animate={{ scale: [1, 1.2, 1], rotate: [0, 180, 360] }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
@@ -82,7 +82,7 @@ export default function AboutPage() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-16ss">
         {/* Main Section - Text Left, Image Right */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-24">
           {/* Left Side - Text Content */}

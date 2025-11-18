@@ -59,7 +59,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen pt-20 pb-12 flex flex-col justify-center items-center overflow-hidden bg-black">
       {/* Animated Background */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hiddens">
         <motion.div
           animate={{ scale: [1, 1.2, 1], rotate: [0, 180, 360] }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
@@ -73,12 +73,12 @@ export default function Hero() {
         <motion.div
           animate={{ y: [0, -30, 0] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl "
         />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center max-w-6xl w-full mx-auto px-6 lg:px-8 gap-12 pt-16 pb-20">
+      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center max-w-7xl w-full mx-auto px-6 lg:px-8 gap-12 pt-16 pb-20">
         {/* Left: Text */}
         <div className="lg:w-1/2 md:text-center lg:text-left order-1 lg:order-1">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="mb-3 lg:mb-4">
@@ -127,7 +127,7 @@ export default function Hero() {
             x: 0,
             y: [0, -5, 0], // Floating motion
           }}
-          transition={{
+          transition={{ 
             opacity: { duration: 0.8 },
             x: { duration: 0.5 },
             y: {
@@ -145,11 +145,11 @@ export default function Hero() {
         >
           <div className="relative w-84 h-106 sm:w-64 sm:h-64 md:w-100 md:h-100 lg:w-100 lg:h-[500px] rounded-md overflow-hidden cursor-pointer border-none">
             <Image
-              src="/images/hero.png"
-              alt="Zikrullah's Profile Picture"
-              fill
-              className="object-cover grayscale hover:grayscale-0 transition-all duration-500 rounded-2xl"
-            />
+    src="/images/hero.png"
+    alt="Zikrullah's Profile Picture"
+    fill
+    className="object-cover grayscale hover:grayscale-0 transition-all duration-500 rounded-2xl"
+  />
           </div>
         </motion.div>
       </div>
