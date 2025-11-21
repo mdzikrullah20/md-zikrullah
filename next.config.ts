@@ -15,7 +15,13 @@ const nextConfig = {
         pathname: '/**',
       },
     ],
+    // Optimize images for better performance
+    formats: ['image/webp', 'image/avif'],
+    // Enable image optimization
+    unoptimized: false,
   },
+  // Ensure static files are properly handled
+  trailingSlash: false,
 }
 
 module.exports = nextConfig

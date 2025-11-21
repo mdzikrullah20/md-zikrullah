@@ -105,7 +105,7 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="text-base text-gray-300 leading-relaxed"
             >
-              Hi, I'm Md Zikrullah — a passionate Full-Stack Developer and Problem Solver who loves crafting beautiful, high-performance web applications. With hands-on experience in React.js, Next.js, TypeScript, and Node.js, I specialize in creating clean, scalable, and user-friendly solutions.
+              Hi, I&lsquo;m Md Zikrullah — a passionate Full-Stack Developer and Problem Solver who loves crafting beautiful, high-performance web applications. With hands-on experience in React.js, Next.js, TypeScript, and Node.js, I specialize in creating clean, scalable, and user-friendly solutions.
             </motion.p>
 
             <motion.p
@@ -260,7 +260,7 @@ export default function AboutPage() {
                 className="relative w-64 h-[400px] sm:w-72 sm:h-[450px] md:w-80 md:h-[500px] lg:w-[350px] lg:h-[550px] overflow-hidden cursor-pointer shadow-2xl"
               >
                 <Image
-                  src="/images/zikrullahone.png"
+                  src="/Images/zikrullahone.png"
                   alt="Zikrullah's Profile Picture"
                   fill
                   style={{ objectFit: "cover" }}
