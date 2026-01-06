@@ -152,7 +152,7 @@ export default function Navbar() {
                 onClick={() => scrollToSection('#contact')}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="relative px-6 py-2.5 cursor-pointer border-1 text-white text-sm font-semibold rounded-full overflow-hidden group hover:bg-purple-600 hover:border-none "
+                className="relative px-6 py-2.5 cursor-pointer border-1 text-white text-sm font-semibold rounded-full overflow-hidden group hover:bg-green-900 hover:border-none "
               >
                 <span className="relative z-10">Hire Me</span>
                 <motion.div

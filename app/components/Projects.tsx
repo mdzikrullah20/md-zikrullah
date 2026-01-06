@@ -49,14 +49,14 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "Collaborative task management tool with real-time updates",
-      fullDescription: "A powerful task management application that helps teams collaborate effectively. Built with real-time synchronization, drag-and-drop interface, and advanced filtering options.",
+      title: "Deal Management",
+      description: "Interactive deal management dashboard with real‑time updates, pipeline tracking, and performance insights",
+      fullDescription: "Deal Management Dashboard is a collaborative, real‑time platform designed to help teams track, manage, and analyze sales opportunities with clarity and speed. It offers a visual sales pipeline, interactive deal cards, and real‑time updates so users can monitor deal progress, assign responsibilities, and collaborate across stages of the sales process. With customizable filters, performance metrics, and at‑a‑glance insights, this dashboard empowers sales teams to stay organized, prioritize high‑impact deals, and make data‑driven decisions that accelerate revenue growth",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
       technologies: ["React", "Node.js", "Socket.io", "PostgreSQL", "Redux"],
       liveLink: "https://example.com",
       githubLink: "https://github.com/yourusername/project2",
-      date: "November 2023",
+      date: "November 2024",
       features: [
         "Real-time collaboration",
         "Drag-and-drop task management",
@@ -68,14 +68,14 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: "Portfolio Website Builder",
-      description: "No-code portfolio builder for creatives and developers",
-      fullDescription: "An intuitive portfolio website builder that allows users to create stunning portfolios without writing code. Features customizable templates, drag-and-drop editor, and one-click deployment.",
+      title: "Portfolio Website ",
+      description: "A responsive, animation‑ready portfolio builder with drag‑and‑drop design, SEO best practices, and one‑click deployment — no coding required",
+      fullDescription: "An intuitive portfolio website builder that allows users to create stunning, fully responsive portfolios with animated elements and built‑in SEO optimization — all without writing code. Features customizable templates, a drag‑and‑drop editor, real‑time code animations, responsive layouts for all devices, and one‑click deployment. Perfect for developers and creatives who want visually engaging portfolios that perform well in search engines",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
       technologies: ["Next.js", "React", "Tailwind CSS", "Vercel", "Supabase"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/yourusername/project3",
-      date: "September 2023",
+      liveLink: "https://md-zikrullah.vercel.app/",
+      githubLink: "https://github.com/mdzikrullah20/md-zikrullah",
+      date: "September 2025",
       features: [
         "Drag-and-drop editor",
         "Multiple customizable templates",
@@ -87,39 +87,37 @@ export default function Projects() {
     },
     {
       id: 4,
-      title: "Weather Dashboard",
-      description: "Real-time weather monitoring with beautiful visualizations",
-      fullDescription: "A comprehensive weather dashboard providing real-time weather data with interactive charts and maps. Features location-based forecasts, weather alerts, and historical data analysis.",
+      title: "Quarter Services",
+      description: "A responsive service-based web application built with modern frontend technologies.",
+       fullDescription:"Quarter Services is a component-based web application developed using React.js, focusing on clean UI/UX, responsiveness, and performance. The project follows mobile-first design principles and ensures cross-browser compatibility with reusable components.",
       image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop",
       technologies: ["React", "TypeScript", "Chart.js", "OpenWeather API", "Material-UI"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/yourusername/project4",
-      date: "July 2023",
+      liveLink: "https://quarter-services.vercel.app/",
+      githubLink: "https://github.com/mdzikrullah20/Quarter-Services-Page",
+      date: "July 2024",
       features: [
-        "Real-time weather updates",
-        "7-day forecast",
-        "Interactive weather maps",
-        "Location-based alerts",
-        "Historical data visualization",
-        "Multiple location tracking"
-      ]
+         "Component-based architecture",
+         "Fully responsive UI",
+         "Mobile-first design",
+         "Cross-browser compatibility",
+         "Optimized performance",
+         "Clean and user-friendly interface"
+       ]
     }
   ];
 
   return (
     <>
-      <section id="projects" className="relative py-20 px-6 bg-black overflow-hidden">
+      <section id="projects" className="relative py-20 px-6 bg-[#0F172A] overflow-hidden">
         {/* Animated Background */}
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
             animate={{ scale: [1, 1.2, 1], rotate: [0, 90, 0] }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-            className="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"
           />
           <motion.div
             animate={{ scale: [1.2, 1, 1.2], rotate: [0, -90, 0] }}
             transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-            className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"
           />
         </div>
 
@@ -139,7 +137,7 @@ export default function Projects() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 ">
             {projects.map((project, i) => (
               <motion.div
                 key={project.id}

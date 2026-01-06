@@ -35,7 +35,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative min-h-screen py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900 via-slate-900 to-gray-900 overflow-hidden"
+      className="relative min-h-screen py-16 px-4 sm:px-6 lg:px-8  bg-[#020617] overflow-hidden"
     >
       {/* Animated Background */}
       <div className="absolute inset-0 pointer-events-none">
@@ -97,7 +97,7 @@ export default function Contact() {
             className="w-full sm:w-[90%] md:w-[80%] lg:w-[60%]"
           >
             <div className="relative group">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-blue-500 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+              <div className="absolute -inset-0.5 to-blue-500 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
               <form
                 onSubmit={handleSubmit}
                 className="relative bg-gray-800/90 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-gray-700/50 space-y-6"
@@ -113,7 +113,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all"
+                    className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all"
                     placeholder="M Zikks"
                   />
                 </div>
@@ -130,7 +130,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all"
+                    className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2  transition-all"
                     placeholder="zikks@example.com"
                   />
                 </div>
@@ -147,7 +147,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     // rows="6"
-                    className="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all resize-none"
+                    className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none min-h-[150px] transition-all resize-none"
                     placeholder="Tell me about your project..."
                   ></textarea>
                 </div>
@@ -158,20 +158,20 @@ export default function Contact() {
                   disabled={isSubmitting}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full px-8 py-4 bg-gradient-to-r from-purple-900 to-blue-800 text-white rounded-xl font-semibold shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                  className="w-full px-8 py-4 cursor-pointer bg-[#FFAF00] text-black rounded-xl font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
                     <>
                       <motion.div
                         animate={{ rotate: 360 }}
                         transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                        className="w-5 h-5 border-2 border-white border-t-transparent rounded-full"
+                        className="w-5 h-5  border-t-transparent rounded-full border-2 border-black"
                       />
                       Sending...
                     </>
                   ) : (
                     <>
-                      <Send className="w-5 h-5" />
+                      <Send className="w-5 h-5 " />
                       Send Message
                     </>
                   )}

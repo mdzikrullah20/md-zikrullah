@@ -20,7 +20,6 @@ export default function AboutPage() {
     "Agile Workflow",
   ];
 
-
   const features = [
     {
       icon: <Code2 className="w-6 h-6" />,
@@ -61,28 +60,28 @@ export default function AboutPage() {
   ];
 
   return (
-    <section id="about" className="relative min-h-screen pt-20 pb-12 bg-black overflow-hidden">
+    <section
+      id="about"
+      className="relative min-h-screen pt-20 pb-12 bg-[#0F172A] overflow-hidden"
+    >
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden ">
         <motion.div
           animate={{ scale: [1, 1.2, 1], rotate: [0, 180, 360] }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute -top-40 -left-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{ scale: [1.2, 1, 1.2], rotate: [360, 180, 0] }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{ y: [0, -30, 0] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"
         />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-16ss">
         {/* Main Section - Text Left, Image Right */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-24">
           {/* Left Side - Text Content */}
@@ -105,7 +104,11 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="text-base text-gray-300 leading-relaxed"
             >
-              Hi, I'm Md Zikrullah — a passionate Full-Stack Developer and Problem Solver who loves crafting beautiful, high-performance web applications. With hands-on experience in React.js, Next.js, TypeScript, and Node.js, I specialize in creating clean, scalable, and user-friendly solutions.
+              Hi, I&lsquo;m Md Zikrullah — a passionate Full-Stack Developer and
+              Problem Solver who loves crafting beautiful, high-performance web
+              applications. With hands-on experience in React.js, Next.js,
+              TypeScript, and Node.js, I specialize in creating clean, scalable,
+              and user-friendly solutions.
             </motion.p>
 
             <motion.p
@@ -113,9 +116,12 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
-              className="text-gray-400 leading-relaxed text-base"
+              className="text-gray-300 leading-relaxed text-base"
             >
-              My journey began with curiosity about how things work behind the scenes, and today, I turn ideas into impactful digital experiences. I focus on writing clean, maintainable code and designing intuitive, accessible interfaces that put users first.
+              My journey began with curiosity about how things work behind the
+              scenes, and today, I turn ideas into impactful digital
+              experiences. I focus on writing clean, maintainable code and
+              designing intuitive, accessible interfaces that put users first.
             </motion.p>
 
             <motion.div
@@ -128,26 +134,54 @@ export default function AboutPage() {
               <h3 className="text-2xl font-semibold text-white">What I Do</h3>
               <ul className="space-y-3">
                 <li className="flex items-start text-gray-300">
-                  <span className="text-purple-400 mr-3 mt-1">▹</span>
+                  <span className="text-purple-400 mr-3 mt-3 flex items-center">
+                    <Image
+                      src="/Images/arrow-circle.svg"
+                      alt="Arrow icon"
+                      width={28}
+                      height={28}
+                      className="w-10 h-10 sm:w-8 sm:h-8"
+                    />
+                  </span>
+
                   <span>
                     <strong className="text-white">
                       Frontend Development:
                     </strong>{" "}
-                    uilding responsive, dynamic, and modern UIs using React.js, Next.js, and Tailwind CSS
+                    uilding responsive, dynamic, and modern UIs using React.js,
+                    Next.js, and Tailwind CSS
                   </span>
                 </li>
                 <li className="flex items-start text-gray-300">
-                  <span className="text-purple-400 mr-3 mt-1">▹</span>
+                 <span className="ext-purple-400 mr-3 mt-3 flex items-center">
+                    <Image
+                      src="/Images/arrow-circle.svg"
+                      alt="Arrow icon"
+                      width={28}
+                      height={28}
+                      className="w-10 h-10 sm:w-8 sm:h-8"
+                    />
+                  </span>
                   <span>
                     <strong className="text-white">Backend Development:</strong>{" "}
-                    Ceveloping robust APIs and scalable server-side applications using Node.js
+                    Ceveloping robust APIs and scalable server-side applications
+                    using Node.js
                   </span>
                 </li>
                 <li className="flex items-start text-gray-300">
-                  <span className="text-purple-400 mr-3 mt-1">▹</span>
+                   <span className="text-purple-400 mr-3 mt-3 flex items-center">
+                    <Image
+                      src="/Images/arrow-circle.svg"
+                      alt="Arrow icon"
+                      width={28}
+                      height={28}
+                      className="w-10 h-10 sm:w-8 sm:h-8"
+                    />
+                  </span>
                   <span>
                     <strong className="text-white">UI/UX Design:</strong>{" "}
-                    Designing clean, user-centered interfaces that enhance usability and engagement
+                    Designing clean, user-centered interfaces that enhance
+                    usability and engagement
                   </span>
                 </li>
               </ul>
@@ -194,9 +228,7 @@ export default function AboutPage() {
                 href="#contact"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white 
-                         rounded-full font-semibold shadow-lg shadow-purple-500/50 
-                         hover:shadow-purple-500/70 transition-all"
+                className="px-6 sm:px-8 py-3 sm:py-4 bg-[#FFAF00] text-black rounded-full font-semibold  hover:shadow-purple-500/70 transition-all text-sm sm:text-base cursor-pointer"
               >
                 Get In Touch
               </motion.a>
@@ -204,8 +236,7 @@ export default function AboutPage() {
                 href="#projects"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 border-2 border-purple-400 text-purple-400 rounded-full 
-                         font-semibold hover:bg-purple-400/10 transition-all text-white"
+                 className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-[#FFAF00] text-white rounded-full font-semibold hover:bg-purple-400/10 transition-all text-sm sm:text-base"
               >
                 View Projects
               </motion.a>
@@ -225,14 +256,10 @@ export default function AboutPage() {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute -top-6 -right-6 w-72 h-72 bg-purple-500/10 rounded-2xl 
-                         -z-10 hidden md:block border border-purple-500/20"
               />
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-                className="absolute -bottom-6 -left-6 w-72 h-72 bg-blue-500/10 rounded-2xl 
-                         -z-10 hidden md:block border border-blue-500/20"
               />
 
               {/* Image container */}
@@ -249,18 +276,18 @@ export default function AboutPage() {
                   y: {
                     duration: 3,
                     repeat: Infinity,
-                    ease: "easeInOut"
-                  }
+                    ease: "easeInOut",
+                  },
                 }}
                 whileHover={{
                   scale: 1.05,
                   rotate: [0, 0, 0, 0],
-                  transition: { duration: 0.3 }
+                  transition: { duration: 0.3 },
                 }}
-                className="relative w-64 h-[400px] sm:w-72 sm:h-[450px] md:w-80 md:h-[500px] lg:w-[350px] lg:h-[550px] overflow-hidden cursor-pointer shadow-2xl"
+                className="relative w-64 h-[400px] sm:w-72 sm:h-[450px] md:w-80 md:h-[500px] lg:w-[350px] lg:h-[550px] overflow-hidden cursor-pointer"
               >
                 <Image
-                  src="/images/zikrullahone.png"
+                  src="/Images/zikrullahone.png"
                   alt="Zikrullah's Profile Picture"
                   fill
                   style={{ objectFit: "cover" }}
@@ -279,9 +306,7 @@ export default function AboutPage() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h2
-            className="text-3xl font-bold text-center mb-12 cursor-pointer text-white"
-          >
+          <h2 className="text-3xl font-bold text-center mb-12 cursor-pointer text-white">
             Why Work With Me
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -104,7 +104,7 @@ const itemVariants = {
 
 function Skills() {
   return (
-     <section id="skills" className="relative min-h-screen pt-20 pb-12 flex flex-col justify-center items-center overflow-hidden bg-black">
+     <section id="skills" className="relative min-h-screen pt-20 pb-12 flex flex-col justify-center items-center overflow-hidden bg-[#020617]">
       {/* Animated Background Orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div 
@@ -117,7 +117,7 @@ function Skills() {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute top-20 -left-20 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"
+          className="absolute top-20 -left-20 w-96 h-96  rounded-full blur-3xl"
         />
         <motion.div 
           animate={{ 
@@ -130,7 +130,7 @@ function Skills() {
             ease: "easeInOut",
             delay: 1
           }}
-          className="absolute top-1/3 right-0 w-[600px] h-[600px] bg-blue-500/20 rounded-full blur-3xl"
+          className="absolute top-1/3 right-0 w-[600px] h-[600px] rounded-full blur-3xl"
         />
         <motion.div 
           animate={{ 
@@ -251,8 +251,8 @@ function Skills() {
                 </div>
 
                 {/* Corner Decorations */}
-                <div className="absolute top-3 right-3 w-2 h-2 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="absolute bottom-3 left-3 w-2 h-2 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
+                {/* <div className="absolute top-3 right-3 w-2 h-2 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" /> */}
+                {/* <div className="absolute bottom-3 left-3 w-2 h-2 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" /> */}
               </div>
             </motion.div>
           ))}
