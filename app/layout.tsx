@@ -21,11 +21,11 @@ const mulish = Mulish({
 });
 // ✅ SEO Metadata
 export const metadata: Metadata = {
-  title: "Md Zikrullah | Frontend Developer",
+  title: "Md Zikrullah | Software Developer",
   description:
-    "Portfolio of Md Zikrullah, a frontend developer specializing in React and Next.js.",
+    "Portfolio of Md Zikrullah, a Software developer specializing in React and Next.js.",
   keywords: [
-    "Frontend Developer",
+    "Software Developer",
     "React",
     "Next.js",
     "Portfolio",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Md Zikrullah", url: "https://yourwebsite.com" }],
   openGraph: {
-    title: "Md Zikrullah | Frontend Developer",
+    title: "Md Zikrullah | Software Developer",
     description:
-      "Portfolio of Md Zikrullah, a frontend developer specializing in React and Next.js.",
+      "Portfolio of Md Zikrullah, a Software developer specializing in React and Next.js.",
     url: "https://yourwebsite.com",
     siteName: "Md Zikrullah Portfolio",
     images: [
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Md Zikrullah | Frontend Developer",
+    title: "Md Zikrullah | Software Developer",
     description:
-      "Portfolio of Your Name, a frontend developer specializing in React and Next.js.",
+      "Portfolio of Your Name, a Software developer specializing in React and Next.js.",
     images: ["/og-image.png"],
   },
 };

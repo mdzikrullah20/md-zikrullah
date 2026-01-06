@@ -11,33 +11,33 @@ export default function Home() {
     <>
       {/* ✅ SEO Metadata */}
       <Head>
-        <title>Your Name | Frontend Developer</title>
+        <title>Your Name | Software Developer</title>
         <meta
           name="description"
-          content="Portfolio of Your Name, a frontend developer specializing in Next.js, React, and Tailwind CSS."
+          content="Portfolio of Your Name, a Software developer specializing in Next.js, React, and Tailwind CSS."
         />
         <meta
           name="keywords"
-          content="Frontend Developer, React, Next.js, Tailwind, Portfolio, TypeScript"
+          content="Software Developer, React, Next.js, Tailwind, Portfolio, TypeScript"
         />
-        <meta name="author" content="Your Name" />
+        <meta name="author" content="Md Zikrullah" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="Md Zikrullah | Frontend Developer" />
+        <meta property="og:title" content="Md Zikrullah | Software Developer" />
         <meta
           property="og:description"
-          content="Portfolio of Md Zikrullah, a frontend developer specializing in Next.js, React, and Tailwind CSS."
+          content="Portfolio of Md Zikrullah, a Software developer specializing in Next.js, React, and Tailwind CSS."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourwebsite.com" />
+        <meta property="og:url" content="https://md-zikrullah.vercel.app/" />
         <meta property="og:image" content="/og-image.png" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Your Name | Frontend Developer" />
+        <meta name="twitter:title" content="Md Zikrullah | Software Developer" />
         <meta
           name="twitter:description"
-          content="Portfolio of Your Name, a frontend developer specializing in Next.js, React, and Tailwind CSS."
+          content="Portfolio of Md Zikrullah, a Software developer specializing in Next.js, React, and Tailwind CSS."
         />
         <meta name="twitter:image" content="/og-image.png" />
       </Head>
