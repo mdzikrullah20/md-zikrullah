@@ -32,12 +32,11 @@ export const metadata: Metadata = {
     "JavaScript",
     "TypeScript",
   ],
-  authors: [{ name: "Md Zikrullah", url: "https://yourwebsite.com" }],
+  authors: [{ name: "Md Zikrullah", }],
   openGraph: {
     title: "Md Zikrullah | Software Developer",
     description:
       "Portfolio of Md Zikrullah, a Software developer specializing in React and Next.js.",
-    url: "https://yourwebsite.com",
     siteName: "Md Zikrullah Portfolio",
     images: [
       {

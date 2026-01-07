@@ -9,12 +9,11 @@ import About from "./components/about";
 export default function Home() {
   return (
     <>
-      {/* ✅ SEO Metadata */}
       <Head>
-        <title>Your Name | Software Developer</title>
+        <title>Md Zikrullah | Software Developer</title>
         <meta
           name="description"
-          content="Portfolio of Your Name, a Software developer specializing in Next.js, React, and Tailwind CSS."
+          content="Portfolio of Md Zikrullah, a Software developer specializing in Next.js, React, and Tailwind CSS."
         />
         <meta
           name="keywords"
