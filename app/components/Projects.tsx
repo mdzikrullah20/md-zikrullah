@@ -30,10 +30,10 @@ export default function Projects() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with payment integration",
-      fullDescription: "A comprehensive e-commerce platform built with modern technologies. Features include user authentication, product management, shopping cart, payment integration with Stripe, order tracking, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
+      title: "Construction Services",
+      description: "A modern construction services website showcasing projects and offerings",
+      fullDescription: "A professional construction services platform designed to showcase residential and commercial projects. The website highlights core services, completed projects, client testimonials, and contact inquiries, providing a strong online presence for construction businesses.",
+      image: "https://plus.unsplash.com/premium_photo-1664477100909-72e25a69f553?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       technologies: ["Next.js", "TypeScript", "MongoDB", "Stripe", "Tailwind CSS"],
       liveLink: "https://example.com",
       githubLink: "https://github.com/yourusername/project1",
@@ -52,7 +52,7 @@ export default function Projects() {
       title: "Deal Management",
       description: "Interactive deal management dashboard with real‑time updates, pipeline tracking, and performance insights",
       fullDescription: "Deal Management Dashboard is a collaborative, real‑time platform designed to help teams track, manage, and analyze sales opportunities with clarity and speed. It offers a visual sales pipeline, interactive deal cards, and real‑time updates so users can monitor deal progress, assign responsibilities, and collaborate across stages of the sales process. With customizable filters, performance metrics, and at‑a‑glance insights, this dashboard empowers sales teams to stay organized, prioritize high‑impact deals, and make data‑driven decisions that accelerate revenue growth",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1758518730136-1bf4fa26ccbf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D",
       technologies: ["React", "Node.js", "Socket.io", "PostgreSQL", "Redux"],
       liveLink: "https://example.com",
       githubLink: "https://github.com/yourusername/project2",
@@ -71,7 +71,7 @@ export default function Projects() {
       title: "Portfolio Website ",
       description: "A responsive, animation‑ready portfolio builder with drag‑and‑drop design, SEO best practices, and one‑click deployment — no coding required",
       fullDescription: "An intuitive portfolio website builder that allows users to create stunning, fully responsive portfolios with animated elements and built‑in SEO optimization — all without writing code. Features customizable templates, a drag‑and‑drop editor, real‑time code animations, responsive layouts for all devices, and one‑click deployment. Perfect for developers and creatives who want visually engaging portfolios that perform well in search engines",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1663284110946-f3da3f52a36e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D",
       technologies: ["Next.js", "React", "Tailwind CSS", "Vercel", "Supabase"],
       liveLink: "https://md-zikrullah.vercel.app/",
       githubLink: "https://github.com/mdzikrullah20/md-zikrullah",
@@ -89,20 +89,20 @@ export default function Projects() {
       id: 4,
       title: "Quarter Services",
       description: "A responsive service-based web application built with modern frontend technologies.",
-       fullDescription:"Quarter Services is a component-based web application developed using React.js, focusing on clean UI/UX, responsiveness, and performance. The project follows mobile-first design principles and ensures cross-browser compatibility with reusable components.",
-      image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop",
+      fullDescription: "Quarter Services is a component-based web application developed using React.js, focusing on clean UI/UX, responsiveness, and performance. The project follows mobile-first design principles and ensures cross-browser compatibility with reusable components.",
+      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1175&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       technologies: ["React", "TypeScript", "Chart.js", "OpenWeather API", "Material-UI"],
       liveLink: "https://quarter-services.vercel.app/",
       githubLink: "https://github.com/mdzikrullah20/Quarter-Services-Page",
       date: "July 2024",
       features: [
-         "Component-based architecture",
-         "Fully responsive UI",
-         "Mobile-first design",
-         "Cross-browser compatibility",
-         "Optimized performance",
-         "Clean and user-friendly interface"
-       ]
+        "Component-based architecture",
+        "Fully responsive UI",
+        "Mobile-first design",
+        "Cross-browser compatibility",
+        "Optimized performance",
+        "Clean and user-friendly interface"
+      ]
     }
   ];
 
@@ -145,8 +145,8 @@ export default function Projects() {
                 data-aos-delay={i * 100}
                 whileHover={{ y: -10 }}
                 onClick={() => setSelectedProject(project)}
-                className="group relative bg-gray-900/50 backdrop-blur-sm border border-gray-800 
-                         rounded-xl overflow-hidden cursor-pointer hover:border-purple-500/50 
+                className="group relative border 
+                         rounded-xl overflow-hidden cursor-pointer hover:border-gray-700 
                          transition-all shadow-xl"
               >
                 {/* Project Image */}
@@ -158,39 +158,14 @@ export default function Projects() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
-                </div>
 
-                {/* Project Info */}
-                <div className="p-6">
-                  <h3 className="text-2xl font-semibold text-white mb-2 group-hover:text-purple-400 
-                               transition-colors">
+                  {/* Dark Overlay */}
+                  <div className="absolute inset-0 bg-black/10"></div>
+
+                  {/* Text on Image */}
+                  <h3 className="absolute bottom-4 left-4 text-2xl font-semibold text-white transition-colors z-10">
                     {project.title}
                   </h3>
-                  <p className="text-gray-400 mb-4">{project.description}</p>
-
-                  {/* Technologies */}
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.slice(0, 3).map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full 
-                                 border border-purple-500/30"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                    {project.technologies.length > 3 && (
-                      <span className="px-3 py-1 bg-gray-800 text-gray-400 text-xs rounded-full">
-                        +{project.technologies.length - 3} more
-                      </span>
-                    )}
-                  </div>
-
-                  <div className="text-purple-400 text-sm font-medium flex items-center gap-2">
-                    View Details
-                    <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
                 </div>
               </motion.div>
             ))}
