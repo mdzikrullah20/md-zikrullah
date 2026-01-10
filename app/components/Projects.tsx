@@ -91,7 +91,7 @@ export default function Projects() {
       description: "A responsive service-based web application built with modern frontend technologies.",
       fullDescription: "Quarter Services is a component-based web application developed using React.js, focusing on clean UI/UX, responsiveness, and performance. The project follows mobile-first design principles and ensures cross-browser compatibility with reusable components.",
       image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1175&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      technologies: ["React", "TypeScript", "Chart.js", "OpenWeather API", "Material-UI"],
+      technologies: ["React", "TypeScript", "Material-UI","Stripe"],
       liveLink: "https://quarter-services.vercel.app/",
       githubLink: "https://github.com/mdzikrullah20/Quarter-Services-Page",
       date: "July 2024",
@@ -100,6 +100,7 @@ export default function Projects() {
         "Fully responsive UI",
         "Mobile-first design",
         "Cross-browser compatibility",
+        "Stripe payment integration",
         "Optimized performance",
         "Clean and user-friendly interface"
       ]
