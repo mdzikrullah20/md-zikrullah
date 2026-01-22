@@ -1,41 +1,74 @@
-import React, { useState } from "react";
+import React, { useState, ChangeEvent, FormEvent } from "react";
 import { motion } from "framer-motion";
-import { Mail, Send, MapPin, Phone, Github, Linkedin, Twitter } from "lucide-react";
+import { Send } from "lucide-react";
+
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
+type SubmitStatus = "" | "success" | "error";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     message: "",
   });
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const [submitStatus, setSubmitStatus] = useState<SubmitStatus>("");
 
-  // ✅ Clean handleChange (no ESLint error)
-  const handleChange = (event: { target: { name: any; value: any; }; }) => {
+  const handleChange = (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ): void => {
     const { name, value } = event.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // ✅ Clean handleSubmit (no unused vars)
-  const handleSubmit = (event: { preventDefault: () => void; }) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
+    
+    // Validate form fields
+    if (!formData.name || !formData.email || !formData.message) {
+      alert("Please fill in all fields");
+      return;
+    }
+
     setIsSubmitting(true);
 
+    // Create WhatsApp message
+    const whatsappMessage = `*New Contact Form Submission*\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n\n*Message:*\n${formData.message}`;
+    
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // Indian WhatsApp number format: 91 + 10 digit number
+    const whatsappNumber = "918084872966";
+    
+    // Create WhatsApp URL
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+    // Simulate sending delay
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitStatus("success");
+      
+      // Open WhatsApp in new tab
+      window.open(whatsappURL, '_blank');
+      
+      // Clear form
       setFormData({ name: "", email: "", message: "" });
 
       setTimeout(() => setSubmitStatus(""), 3000);
-    }, 2000);
+    }, 1000);
   };
 
   return (
     <section
       id="contact"
-      className="relative min-h-screen py-16 px-4 sm:px-6 lg:px-8  bg-[#020617] overflow-hidden"
+      className="relative min-h-screen py-16 px-4 sm:px-6 lg:px-8 bg-[#020617] overflow-hidden"
     >
       {/* Animated Background */}
       <div className="absolute inset-0 pointer-events-none">
@@ -98,96 +131,111 @@ export default function Contact() {
           >
             <div className="relative group">
               <div className="absolute -inset-0.5 to-blue-500 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
-              <form
-                onSubmit={handleSubmit}
-                className="relative bg-gray-800/90 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-gray-700/50 space-y-6"
-              >
-                {/* Name */}
-                <div>
-                  <label htmlFor="name" className="block text-gray-300 font-medium mb-2">
-                    Your Name
-                  </label>
-                  <input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all"
-                    placeholder="M Zikks"
-                  />
-                </div>
+              <div className="relative bg-gray-800/90 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-gray-700/50">
+                <div className="space-y-6">
+                  {/* Name */}
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="block text-gray-300 font-medium mb-2"
+                    >
+                      Your Name
+                    </label>
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 transition-all"
+                      placeholder="M Zikks"
+                    />
+                  </div>
 
-                {/* Email */}
-                <div>
-                  <label htmlFor="email" className="block text-gray-300 font-medium mb-2">
-                    Your Email
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2  transition-all"
-                    placeholder="zikks@example.com"
-                  />
-                </div>
+                  {/* Email */}
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="block text-gray-300 font-medium mb-2"
+                    >
+                      Your Email
+                    </label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 transition-all"
+                      placeholder="zikks@example.com"
+                    />
+                  </div>
 
-                {/* Message */}
-                <div>
-                  <label htmlFor="message" className="block text-gray-300 font-medium mb-2">
-                    Your Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    // rows="6"
-                    className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none min-h-[150px] transition-all resize-none"
-                    placeholder="Tell me about your project..."
-                  ></textarea>
-                </div>
+                  {/* Message */}
+                  <div>
+                    <label
+                      htmlFor="message"
+                      className="block text-gray-300 font-medium mb-2"
+                    >
+                      Your Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 min-h-[150px] transition-all resize-none"
+                      placeholder="Tell me about your project..."
+                    ></textarea>
+                  </div>
 
-                {/* Submit */}
-                <motion.button
-                  type="submit"
-                  disabled={isSubmitting}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full px-8 py-4 cursor-pointer bg-[#FFAF00] text-black rounded-xl font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-                >
-                  {isSubmitting ? (
-                    <>
-                      <motion.div
-                        animate={{ rotate: 360 }}
-                        transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                        className="w-5 h-5  border-t-transparent rounded-full border-2 border-black"
-                      />
-                      Sending...
-                    </>
-                  ) : (
-                    <>
-                      <Send className="w-5 h-5 " />
-                      Send Message
-                    </>
-                  )}
-                </motion.button>
-
-                {/* Success Message */}
-                {submitStatus === "success" && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="p-4 bg-green-500/10 border border-green-500/30 rounded-xl text-green-400 text-center"
+                  {/* Submit */}
+                  <motion.button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleSubmit(e as any);
+                    }}
+                    disabled={isSubmitting}
+                    whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
+                    whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
+                    className="w-full px-8 py-4 cursor-pointer bg-[#FFAF00] text-black rounded-xl font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 hover:bg-[#ffbf33]"
                   >
-                    ✓ Message sent successfully! I'll get back to you soon.
-                  </motion.div>
-                )}
-              </form>
+                    {isSubmitting ? (
+                      <>
+                        <motion.div
+                          animate={{ rotate: 360 }}
+                          transition={{
+                            duration: 1,
+                            repeat: Infinity,
+                            ease: "linear",
+                          }}
+                          className="w-5 h-5 border-t-transparent rounded-full border-2 border-black"
+                        />
+                        Opening WhatsApp...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-5 h-5" />
+                        Send via WhatsApp
+                      </>
+                    )}
+                  </motion.button>
+
+                  {/* Success Message */}
+                  {submitStatus === "success" && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="p-4 bg-green-500/10 border border-green-500/30 rounded-xl text-green-400 text-center"
+                    >
+                      ✓ Opening WhatsApp! Please send the pre-filled message.
+                    </motion.div>
+                  )}
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>

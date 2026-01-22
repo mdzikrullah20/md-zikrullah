@@ -99,7 +99,7 @@ export default function Navbar() {
               <Link
                 href="/"
                 className="text-xl md:text-3xl font-bold text-white"
-              >
+              > 
                 Portfolio
               </Link>
             </motion.div>
@@ -126,18 +126,17 @@ export default function Navbar() {
                   {activeSection === link.href.substring(1) && (
                     <motion.div
                       layoutId="activeIndicator"
-                      className="absolute inset-0 bg-purple-500/10 rounded-lg border border-purple-500/20"
-                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}  
                     />
                   )}
                   
                   {/* Hover effect */}
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-purple-500/0 to-blue-500/0 rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-300"
+                  {/* <motion.div
+                    className="absolute inset-0 bg-gradient-to-r from-purple-500/0 to-blue-500/0 rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-300 border-2"
                     whileHover={{
                       background: "linear-gradient(to right, rgba(168, 85, 247, 0.1), rgba(59, 130, 246, 0.1))"
                     }}
-                  />
+                  /> */}
                 </motion.button>
               ))}
             </div>

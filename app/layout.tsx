@@ -1,3 +1,4 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { Geist, Geist_Mono ,Mulish } from "next/font/google";
 import "./globals.css";
@@ -46,14 +47,12 @@ export const metadata: Metadata = {
         alt: "Md Zikrullah Portfolio",
       },
     ],
-    locale: "en_US",
-    type: "website",
+ 
   },
   twitter: {
     card: "summary_large_image",
     title: "Md Zikrullah | Software Developer",
-    description:
-      "Portfolio of Your Name, a Software developer specializing in React and Next.js.",
+    description: "Portfolio of Md Zikrullah, a Software developer specializing in Next.js, React, and Tailwind CSS.",
     images: ["/og-image.png"],
   },
 };
