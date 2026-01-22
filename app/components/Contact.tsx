@@ -5,6 +5,7 @@ import { Send } from "lucide-react";
 interface FormData {
   name: string;
   email: string;
+  number: string;
   message: string;
 }
 
@@ -14,6 +15,7 @@ export default function Contact() {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
+    number: "",
     message: "",
   });
 
@@ -29,7 +31,7 @@ export default function Contact() {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
-    
+
     // Validate form fields
     if (!formData.name || !formData.email || !formData.message) {
       alert("Please fill in all fields");
@@ -40,13 +42,13 @@ export default function Contact() {
 
     // Create WhatsApp message
     const whatsappMessage = `*New Contact Form Submission*\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n\n*Message:*\n${formData.message}`;
-    
+
     // Encode the message for URL
     const encodedMessage = encodeURIComponent(whatsappMessage);
-    
+
     // Indian WhatsApp number format: 91 + 10 digit number
     const whatsappNumber = "918084872966";
-    
+
     // Create WhatsApp URL
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
@@ -54,16 +56,24 @@ export default function Contact() {
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitStatus("success");
-      
+
       // Open WhatsApp in new tab
       window.open(whatsappURL, '_blank');
-      
+
       // Clear form
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ name: "", email: "", number: "", message: "" });
 
       setTimeout(() => setSubmitStatus(""), 3000);
     }, 1000);
   };
+  const handleNumberChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value.replace(/[^0-9]/g, "");
+    setFormData((prev) => ({
+      ...prev,
+      number: value,
+    }));
+  };
+
 
   return (
     <section
@@ -172,6 +182,29 @@ export default function Contact() {
                       placeholder="zikks@example.com"
                     />
                   </div>
+                  {/* mobile no */}
+                  <div>
+                    <label
+                      htmlFor="number"
+                      className="block text-gray-300 font-medium mb-2"
+                    >
+                      Mobile Number
+                    </label>
+
+                    <input
+                      id="number"
+                      name="number"
+                      type="text"
+                      inputMode="numeric"
+                      pattern="[0-9]*"
+                      value={formData.number}
+                      onChange={handleNumberChange}
+                      maxLength={10}
+                      required
+                      placeholder="Enter number"
+                      className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 transition-all"
+                    />
+                  </div>
 
                   {/* Message */}
                   <div>
@@ -188,7 +221,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 min-h-[150px] transition-all resize-none"
-                      placeholder="Tell me about your project..."
+                      placeholder="What would you like to build?"
                     ></textarea>
                   </div>
 
@@ -197,7 +230,7 @@ export default function Contact() {
                     onClick={(e) => {
                       e.preventDefault();
                       handleSubmit(e as any);
-                    }}
+                    }}  
                     disabled={isSubmitting}
                     whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
                     whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
@@ -219,7 +252,7 @@ export default function Contact() {
                     ) : (
                       <>
                         <Send className="w-5 h-5" />
-                        Send via WhatsApp
+                        Send Message
                       </>
                     )}
                   </motion.button>
