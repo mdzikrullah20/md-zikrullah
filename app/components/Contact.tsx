@@ -41,7 +41,7 @@ export default function Contact() {
     setIsSubmitting(true);
 
     // Create WhatsApp message
-    const whatsappMessage = `*New Contact Form Submission*\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n\n*Message:*\n${formData.message}`;
+    const whatsappMessage = `*Hello, I am interested in your services.*\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n\n*Message:*\n${formData.message}`;
 
     // Encode the message for URL
     const encodedMessage = encodeURIComponent(whatsappMessage);

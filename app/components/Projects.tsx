@@ -30,23 +30,25 @@ export default function Projects() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Construction Services",
-      description: "A modern construction services website showcasing projects and offerings",
-      fullDescription: "A professional construction services platform designed to showcase residential and commercial projects. The website highlights core services, completed projects, client testimonials, and contact inquiries, providing a strong online presence for construction businesses.",
-      image: "https://plus.unsplash.com/premium_photo-1664477100909-72e25a69f553?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      technologies: ["Next.js", "TypeScript", "MongoDB", "Stripe", "Tailwind CSS"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/yourusername/project1",
-      date: "January 2024",
+      title: "Quarter Services",
+      description: "A responsive service-based web application built with modern frontend technologies.",
+      fullDescription: "Quarter Services is a component-based web application developed using React.js, focusing on clean UI/UX, responsiveness, and performance. The project follows mobile-first design principles and ensures cross-browser compatibility with reusable components.",
+      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1175&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      technologies: ["React", "TypeScript", "Material-UI","Stripe"],
+      liveLink: "https://quarter-services.vercel.app/",
+      githubLink: "https://github.com/mdzikrullah20/Quarter-Services-Page",
+      date: "July 2024",
       features: [
-        "User authentication with JWT",
-        "Product catalog with search and filters",
-        "Shopping cart and wishlist",
+        "Component-based architecture",
+        "Fully responsive UI",
+        "Mobile-first design",
+        "Cross-browser compatibility",
         "Stripe payment integration",
-        "Order tracking system",
-        "Admin dashboard for management"
+        "Optimized performance",
+        "Clean and user-friendly interface"
       ]
     },
+   
     {
       id: 2,
       title: "Deal Management",
@@ -71,7 +73,7 @@ export default function Projects() {
       title: "Portfolio Website ",
       description: "A responsive, animation‑ready portfolio builder with drag‑and‑drop design, SEO best practices, and one‑click deployment — no coding required",
       fullDescription: "An intuitive portfolio website builder that allows users to create stunning, fully responsive portfolios with animated elements and built‑in SEO optimization — all without writing code. Features customizable templates, a drag‑and‑drop editor, real‑time code animations, responsive layouts for all devices, and one‑click deployment. Perfect for developers and creatives who want visually engaging portfolios that perform well in search engines",
-      image: "https://images.unsplash.com/photo-1663284110946-f3da3f52a36e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D",
+      image: "https://images.unsplash.com/photo-1698919585693-191c51b66cde?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       technologies: ["Next.js", "React", "Tailwind CSS", "Vercel", "Supabase"],
       liveLink: "https://md-zikrullah.vercel.app/",
       githubLink: "https://github.com/mdzikrullah20/md-zikrullah",
@@ -85,26 +87,25 @@ export default function Projects() {
         "One-click deployment"
       ]
     },
-    {
+     {
       id: 4,
-      title: "Quarter Services",
-      description: "A responsive service-based web application built with modern frontend technologies.",
-      fullDescription: "Quarter Services is a component-based web application developed using React.js, focusing on clean UI/UX, responsiveness, and performance. The project follows mobile-first design principles and ensures cross-browser compatibility with reusable components.",
-      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1175&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      technologies: ["React", "TypeScript", "Material-UI","Stripe"],
-      liveLink: "https://quarter-services.vercel.app/",
-      githubLink: "https://github.com/mdzikrullah20/Quarter-Services-Page",
-      date: "July 2024",
+      title: "Construction Services",
+      description: "A modern construction services website showcasing projects and offerings",
+      fullDescription: "A professional construction services platform designed to showcase residential and commercial projects. The website highlights core services, completed projects, client testimonials, and contact inquiries, providing a strong online presence for construction businesses.",
+      image: "https://plus.unsplash.com/premium_photo-1661492508986-a08981467a8c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      technologies: ["Next.js", "TypeScript", "MongoDB", "Stripe", "Tailwind CSS"],
+      liveLink: "https://example.com",
+      githubLink: "https://github.com/yourusername/project1",
+      date: "January 2024",
       features: [
-        "Component-based architecture",
-        "Fully responsive UI",
-        "Mobile-first design",
-        "Cross-browser compatibility",
+        "User authentication with JWT",
+        "Product catalog with search and filters",
+        "Shopping cart and wishlist",
         "Stripe payment integration",
-        "Optimized performance",
-        "Clean and user-friendly interface"
+        "Order tracking system",
+        "Admin dashboard for management"
       ]
-    }
+    },
   ];
 
   return (
