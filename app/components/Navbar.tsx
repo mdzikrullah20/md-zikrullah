@@ -104,7 +104,7 @@ export default function Navbar() {
               </Link>
             </motion.div>
 
-            {/* Desktop Navigation */}
+            {/* Desktop Navigation */}  
             <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
               {navLinks.map((link, index) => (
                 <motion.button
@@ -117,7 +117,7 @@ export default function Navbar() {
                   className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg ${
                     activeSection === link.href.substring(1)
                       ? 'text-white'
-                      : 'text-gray-300 hover:text-white cursor-pointer'
+                      : 'text-gray-300 hover:bg-gray-800/50 hover:text-yellow-400 cursor-pointer'
                   }`}
                 >
                   {link.name}
@@ -131,12 +131,12 @@ export default function Navbar() {
                   )}
                   
                   {/* Hover effect */}
-                  {/* <motion.div
+                  <motion.div
                     className="absolute inset-0 bg-gradient-to-r from-purple-500/0 to-blue-500/0 rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-300 border-2"
                     whileHover={{
                       background: "linear-gradient(to right, rgba(168, 85, 247, 0.1), rgba(59, 130, 246, 0.1))"
                     }}
-                  /> */}
+                  />
                 </motion.button>
               ))}
             </div>
@@ -151,7 +151,7 @@ export default function Navbar() {
                 onClick={() => scrollToSection('#contact')}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="relative px-6 py-2.5 cursor-pointer border-1 text-white text-sm font-semibold rounded-full overflow-hidden group hover:bg-yellow-700 hover:border-none "
+                className="relative px-6 py-2.5 cursor-pointer border-1 text-white text-sm font-semibold rounded-full overflow-hidden group hover:bg-yellow-600 hover:border-none "
               >
                 <span className="relative z-10">Hire Me</span>
                 <motion.div
@@ -240,7 +240,7 @@ export default function Navbar() {
                   <div className="space-y-2">
                     {navLinks.map((link, index) => (
                       <motion.button
-                        key={link.name}
+                        key={link.name}   
                         onClick={() => scrollToSection(link.href)}
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -248,11 +248,11 @@ export default function Navbar() {
                         whileTap={{ scale: 0.95 }}
                         className={`w-full flex items-center gap-4 px-4 py-3 rounded-xl transition-all duration-300 ${
                           activeSection === link.href.substring(1)
-                            ? 'bg-gradient-to-r from-purple-500/20 to-blue-500/20 text-purple-400 border border-purple-500/30'
-                            : 'text-gray-300 hover:bg-gray-800/50 hover:text-white'
+                            ? 'bg-gradient-to-r text-white'
+                            : 'text-gray-300 hover:bg-gray-800/50 hover:text-yellow-400 cursor-pointer'
                         }`}
                       >
-                        <span className={activeSection === link.href.substring(1) ? 'text-purple-400' : 'text-gray-500'}>
+                        <span className={activeSection === link.href.substring(1) ? 'text-gray-400' : 'text-gray-500'}>
                           {link.icon}
                         </span>
                         <span className="font-medium">{link.name}</span>
@@ -260,7 +260,6 @@ export default function Navbar() {
                         {activeSection === link.href.substring(1) && (
                           <motion.div
                             layoutId="mobileActive"
-                            className="ml-auto w-2 h-2 bg-purple-400 rounded-full"
                           />
                         )}
                       </motion.button>
