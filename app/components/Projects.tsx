@@ -54,7 +54,7 @@ export default function Projects() {
       title: "OneSpot.tv",
       description: "A video streaming platform with interactive features, personalized content, and real-time updates.",
       fullDescription: "OneSpot.tv is a modern video streaming platform that allows users to watch, share, and interact with video content seamlessly. It features a responsive interface, personalized recommendations, real-time notifications, and smooth video playback. Built for scalability and interactivity, OneSpot.tv leverages Next.js for the frontend, Node.js for the backend, Socket.io for real-time communication, and PostgreSQL for database management. Users can create accounts, manage playlists, and explore curated content, all while enjoying a fast and engaging streaming experience.",
-      image: "images/card.svg",
+      image: "/images/card.svg",
       technologies: ["Next.js", "Typescript", "Socket.io", "PostgreSQL", "Tailwind CSS", "Node.js"],
       liveLink: "https://spectrum-beta.vercel.app/",
       githubLink: "https://github.com/mdzikrullah20/onespot.tv",
@@ -233,7 +233,7 @@ export default function Projects() {
                         href={selectedProject.liveLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-3 bg-purple-500 hover:bg-purple-600 text-white rounded-lg 
+                         className="p-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg 
                                  transition-colors"
                       >
                         <ExternalLink className="w-5 h-5" />
