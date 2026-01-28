@@ -217,7 +217,7 @@ export default function Hero() {
         >
           <div className="relative w-84 h-106 sm:w-64 sm:h-64 md:w-100 md:h-100 lg:w-100 lg:h-[500px] rounded-md overflow-hidden cursor-pointer border-none">
             <Image
-              src="/Images/hero.png"
+              src="/Images/hero.webp"
               alt="Zikrullah's Profile Picture"
               fill
               className="object-cover grayscale hover:grayscale-0 transition-all duration-500 rounded-2xl"
