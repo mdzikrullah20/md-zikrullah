@@ -26,6 +26,7 @@ export default function Projects() {
   useEffect(() => {
     AOS.init({ duration: 1200 });
   }, []);
+  console.log("image/back.svg");
 
   const projects: Project[] = [
     {
@@ -34,7 +35,7 @@ export default function Projects() {
       description: "A responsive service-based web application built with modern frontend technologies.",
       fullDescription: "Quarter Services is a component-based web application developed using React.js, focusing on clean UI/UX, responsiveness, and performance. The project follows mobile-first design principles and ensures cross-browser compatibility with reusable components.",
       image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1175&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      technologies: ["React", "TypeScript", "Material-UI","Stripe"],
+      technologies: ["React", "TypeScript", "Material-UI", "Stripe"],
       liveLink: "https://quarter-services.vercel.app/",
       githubLink: "https://github.com/mdzikrullah20/Quarter-Services-Page",
       date: "July 2024",
@@ -48,24 +49,23 @@ export default function Projects() {
         "Clean and user-friendly interface"
       ]
     },
-   
     {
       id: 2,
-      title: "Deal Management",
-      description: "Interactive deal management dashboard with real‑time updates, pipeline tracking, and performance insights",
-      fullDescription: "Deal Management Dashboard is a collaborative, real‑time platform designed to help teams track, manage, and analyze sales opportunities with clarity and speed. It offers a visual sales pipeline, interactive deal cards, and real‑time updates so users can monitor deal progress, assign responsibilities, and collaborate across stages of the sales process. With customizable filters, performance metrics, and at‑a‑glance insights, this dashboard empowers sales teams to stay organized, prioritize high‑impact deals, and make data‑driven decisions that accelerate revenue growth",
-      image: "https://images.unsplash.com/photo-1758518730136-1bf4fa26ccbf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D",
-      technologies: ["React", "Node.js", "Socket.io", "PostgreSQL", "Redux"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/yourusername/project2",
-      date: "November 2024",
+      title: "OneSpot.tv",
+      description: "A video streaming platform with interactive features, personalized content, and real-time updates.",
+      fullDescription: "OneSpot.tv is a modern video streaming platform that allows users to watch, share, and interact with video content seamlessly. It features a responsive interface, personalized recommendations, real-time notifications, and smooth video playback. Built for scalability and interactivity, OneSpot.tv leverages Next.js for the frontend, Node.js for the backend, Socket.io for real-time communication, and PostgreSQL for database management. Users can create accounts, manage playlists, and explore curated content, all while enjoying a fast and engaging streaming experience.",
+      image: "images/card.svg",
+      technologies: ["Next.js", "Typescript", "Socket.io", "PostgreSQL", "Tailwind CSS", "Node.js"],
+      liveLink: "https://spectrum-beta.vercel.app/",
+      githubLink: "https://github.com/mdzikrullah20/onespot.tv",
+      date: "January 2026",
       features: [
-        "Real-time collaboration",
-        "Drag-and-drop task management",
-        "Team workspace management",
-        "Advanced filtering and sorting",
-        "File attachments support",
-        "Activity timeline and notifications"
+        "User authentication and account management",
+        "Video streaming with smooth playback",
+        "Interactive playlists and favorites",
+        "Real-time notifications and updates",
+        "Responsive design for all devices",
+        "Personalized content recommendations"
       ]
     },
     {
@@ -87,7 +87,7 @@ export default function Projects() {
         "One-click deployment"
       ]
     },
-     {
+    {
       id: 4,
       title: "Construction Services",
       description: "A modern construction services website showcasing projects and offerings",

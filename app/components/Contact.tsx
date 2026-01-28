@@ -22,6 +22,7 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [submitStatus, setSubmitStatus] = useState<SubmitStatus>("");
 
+  // Handle text/textarea changes
   const handleChange = (
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ): void => {
@@ -29,10 +30,16 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  // Handle number input changes
+  const handleNumberChange = (e: ChangeEvent<HTMLInputElement>): void => {
+    const value = e.target.value.replace(/[^0-9]/g, "");
+    setFormData((prev) => ({ ...prev, number: value }));
+  };
+
+  // Form submission
   const handleSubmit = (event: FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
 
-    // Validate form fields
     if (!formData.name || !formData.email || !formData.message) {
       alert("Please fill in all fields");
       return;
@@ -40,16 +47,9 @@ export default function Contact() {
 
     setIsSubmitting(true);
 
-    // Create WhatsApp message
     const whatsappMessage = `*Hello, I am interested in your services.*\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n\n*Message:*\n${formData.message}`;
-
-    // Encode the message for URL
     const encodedMessage = encodeURIComponent(whatsappMessage);
-
-    // Indian WhatsApp number format: 91 + 10 digit number
     const whatsappNumber = "918084872966";
-
-    // Create WhatsApp URL
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
     // Simulate sending delay
@@ -57,8 +57,8 @@ export default function Contact() {
       setIsSubmitting(false);
       setSubmitStatus("success");
 
-      // Open WhatsApp in new tab
-      window.open(whatsappURL, '_blank');
+      // Open WhatsApp
+      window.open(whatsappURL, "_blank");
 
       // Clear form
       setFormData({ name: "", email: "", number: "", message: "" });
@@ -66,14 +66,6 @@ export default function Contact() {
       setTimeout(() => setSubmitStatus(""), 3000);
     }, 1000);
   };
-  const handleNumberChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value.replace(/[^0-9]/g, "");
-    setFormData((prev) => ({
-      ...prev,
-      number: value,
-    }));
-  };
-
 
   return (
     <section
@@ -83,28 +75,13 @@ export default function Contact() {
       {/* Animated Background */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
+          animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
           className="absolute top-1/4 -right-20 w-72 sm:w-96 h-72 sm:h-96 bg-purple-500/20 rounded-full blur-3xl"
         />
         <motion.div
-          animate={{
-            scale: [1, 1.3, 1],
-            opacity: [0.2, 0.4, 0.2],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1,
-          }}
+          animate={{ scale: [1, 1.3, 1], opacity: [0.2, 0.4, 0.2] }}
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
           className="absolute bottom-1/4 -left-20 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-blue-500/20 rounded-full blur-3xl"
         />
       </div>
@@ -126,7 +103,7 @@ export default function Contact() {
             Contact
           </h2>
           <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
-            Have a project in mind? Let's create something amazing together.
+            Have a project in mind? Let&apos;s create something amazing together.
           </p>
         </motion.div>
 
@@ -139,16 +116,13 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="w-full sm:w-[90%] md:w-[80%] lg:w-[60%]"
           >
-            <div className="relative group">
+            <form onSubmit={handleSubmit} className="relative group">
               <div className="absolute -inset-0.5 to-blue-500 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
               <div className="relative bg-gray-800/90 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-gray-700/50">
                 <div className="space-y-6">
                   {/* Name */}
                   <div>
-                    <label
-                      htmlFor="name"
-                      className="block text-gray-300 font-medium mb-2"
-                    >
+                    <label htmlFor="name" className="block text-gray-300 font-medium mb-2">
                       Your Name
                     </label>
                     <input
@@ -158,17 +132,14 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 transition-all"
                       placeholder="M Zikks"
+                      className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 transition-all"
                     />
                   </div>
 
                   {/* Email */}
                   <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-gray-300 font-medium mb-2"
-                    >
+                    <label htmlFor="email" className="block text-gray-300 font-medium mb-2">
                       Your Email
                     </label>
                     <input
@@ -178,19 +149,16 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 transition-all"
                       placeholder="zikks@example.com"
+                      className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 transition-all"
                     />
                   </div>
-                  {/* mobile no */}
+
+                  {/* Mobile Number */}
                   <div>
-                    <label
-                      htmlFor="number"
-                      className="block text-gray-300 font-medium mb-2"
-                    >
+                    <label htmlFor="number" className="block text-gray-300 font-medium mb-2">
                       Mobile Number
                     </label>
-
                     <input
                       id="number"
                       name="number"
@@ -208,10 +176,7 @@ export default function Contact() {
 
                   {/* Message */}
                   <div>
-                    <label
-                      htmlFor="message"
-                      className="block text-gray-300 font-medium mb-2"
-                    >
+                    <label htmlFor="message" className="block text-gray-300 font-medium mb-2">
                       Your Message
                     </label>
                     <textarea
@@ -220,31 +185,24 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 min-h-[150px] transition-all resize-none"
                       placeholder="What would you like to build?"
-                    ></textarea>
+                      className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 min-h-[150px] transition-all resize-none"
+                    />
                   </div>
 
-                  {/* Submit */}
+                  {/* Submit Button */}
                   <motion.button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handleSubmit(e as any);
-                    }}  
+                    type="submit"
                     disabled={isSubmitting}
                     whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
                     whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
-                    className="w-full px-8 py-4 cursor-pointer bg-[#FFAF00] text-black rounded-xl font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 hover:bg-[#ffbf33]"
+                    className="w-full px-8 py-4 bg-[#FFAF00] text-black rounded-xl font-semibold flex items-center justify-center gap-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#ffbf33]"
                   >
                     {isSubmitting ? (
                       <>
                         <motion.div
                           animate={{ rotate: 360 }}
-                          transition={{
-                            duration: 1,
-                            repeat: Infinity,
-                            ease: "linear",
-                          }}
+                          transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
                           className="w-5 h-5 border-t-transparent rounded-full border-2 border-black"
                         />
                         Opening WhatsApp...
@@ -269,7 +227,7 @@ export default function Contact() {
                   )}
                 </div>
               </div>
-            </div>
+            </form>
           </motion.div>
         </div>
       </div>
