@@ -89,21 +89,21 @@ export default function Projects() {
     },
     {
       id: 4,
-      title: "Construction Services",
-      description: "A modern construction services website showcasing projects and offerings",
-      fullDescription: "A professional construction services platform designed to showcase residential and commercial projects. The website highlights core services, completed projects, client testimonials, and contact inquiries, providing a strong online presence for construction businesses.",
-      image: "https://plus.unsplash.com/premium_photo-1661492508986-a08981467a8c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      technologies: ["Next.js", "TypeScript", "MongoDB", "Stripe", "Tailwind CSS"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/yourusername/project1",
-      date: "January 2024",
+      title: "LaboZiks",
+      description: "LaboZiks is a modern laboratory services platform built to showcase lab facilities, research work, and scientific services.",
+      fullDescription: "LaboZiks is a professional laboratory website developed using Next.js and Tailwind CSS. The platform presents laboratory services, research projects, equipment details, and contact inquiries, providing a digital presence for scientific and medical labs.",
+      image: "https://images.unsplash.com/photo-1631556759511-6ce895fbf0ad?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      technologies: ["Next.js", "Tailwind CSS, Typescript", "Vercel"],
+      liveLink: "https://labozikks.vercel.app/",
+      githubLink: "https://github.com/mdzikrullah20/labozikks",
+      date: "January 2026",
       features: [
-        "User authentication with JWT",
-        "Product catalog with search and filters",
-        "Shopping cart and wishlist",
-        "Stripe payment integration",
-        "Order tracking system",
-        "Admin dashboard for management"
+        "Modern and responsive UI",
+        "Service listing for laboratory tests",
+        "Research and project showcase",
+        "Contact form for inquiries",
+        "Fast performance with Next.js",
+        "Clean and minimal design using Tailwind CSS"
       ]
     },
   ];
@@ -233,7 +233,7 @@ export default function Projects() {
                         href={selectedProject.liveLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                         className="p-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg 
+                        className="p-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg 
                                  transition-colors"
                       >
                         <ExternalLink className="w-5 h-5" />
