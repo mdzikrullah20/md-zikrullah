@@ -55,6 +55,9 @@ export const metadata: Metadata = {
     description: "Portfolio of Md Zikrullah, a Software developer specializing in Next.js, React, and Tailwind CSS.",
     images: ["/og-image.png"],
   },
+  verification: {
+    google: "qkVgDARkBhMoMbRWVep6JiD7yRpLPFBvr1DTnK-EVs0",
+  },
 };
 
 export default function RootLayout({
