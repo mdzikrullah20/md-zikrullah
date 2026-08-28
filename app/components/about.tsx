@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Code2, Palette, Zap, Users, BookOpen, Trophy } from "lucide-react";
+import { Code2, Palette, Zap, Users, BookOpen, Trophy,MapPin } from "lucide-react";
 
 export default function AboutPage() {
   const skills = [
@@ -95,6 +95,10 @@ export default function AboutPage() {
               <h1 className="text-4xl text-white md:text-5xl font-bold mt-2 mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
                 About Me
               </h1>
+              <p className="flex items-center gap-2 text-gray-400 text-sm">
+                <MapPin className="w-4 h-4 text-purple-400" />
+                Hyderabad, India
+              </p>
             </motion.div>
 
             <motion.p
