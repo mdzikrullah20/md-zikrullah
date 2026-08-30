@@ -74,6 +74,50 @@ const skills = [
     name: 'CSS3',
     gradient: 'from-blue-400 via-blue-500 to-indigo-600',
     shadow: 'shadow-blue-500/50'
+  },
+  {
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+    name: 'PHP',
+    gradient: 'from-indigo-400 via-indigo-500 to-violet-600',
+    shadow: 'shadow-indigo-500/50'
+  },
+  {
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+    name: 'MySQL',
+    gradient: 'from-sky-300 via-blue-500 to-orange-400',
+    shadow: 'shadow-sky-500/50'
+  },
+  {
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg',
+    name: 'CodeIgniter 3',
+    gradient: 'from-red-400 via-orange-500 to-red-600',
+    shadow: 'shadow-red-500/50',
+    isDark: true
+  },
+  {
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg',
+    name: 'DevOps',
+    gradient: 'from-blue-400 via-sky-500 to-blue-700',
+    shadow: 'shadow-blue-500/50'
+  },
+  {
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+    name: 'Docker',
+    gradient: 'from-sky-300 via-cyan-500 to-blue-600',
+    shadow: 'shadow-sky-500/50'
+  },
+  {
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
+    name: 'Machine Learning',
+    gradient: 'from-orange-400 via-amber-500 to-orange-600',
+    shadow: 'shadow-orange-500/50'
+  },
+  {
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg',
+    name: 'FastAPI',
+    gradient: 'from-teal-300 via-emerald-500 to-teal-600',
+    shadow: 'shadow-teal-500/50',
+    isDark: true
   }
 ];
 
@@ -104,7 +148,7 @@ const itemVariants = {
 
 function Skills() {
   return (
-     <section id="skills" className="relative min-h-screen pt-20 pb-12 flex flex-col justify-center items-center overflow-hidden bg-[#020617]">
+     <section id="skills" className="relative min-h-screen pt-20 pb-12 flex flex-col justify-center items-center overflow-hidden bg-slate-50 dark:bg-[#020617] transition-colors duration-300">
       {/* Animated Background Orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div 
@@ -165,7 +209,7 @@ function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-4xl text-white md:text-5xl font-bold mt-2 mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 text-gray-900 dark:text-white leading-tight"
           >
             Skills
           </motion.h2>
@@ -175,7 +219,7 @@ function Skills() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-gray-400 text-base max-w-3xl mx-auto leading-relaxed"
+            className="text-gray-600 dark:text-gray-400 text-base max-w-3xl mx-auto leading-relaxed"
           >
             Mastering modern technologies to build exceptional digital experiences
             <br/>
@@ -210,7 +254,7 @@ function Skills() {
               />
               
               {/* Card */}
-              <div className="cursor-pointer relative h-full bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-xl rounded-3xl p-8 border border-gray-700/50 group-hover:border-gray-600 transition-all duration-300">
+              <div className="cursor-pointer relative h-full bg-white/90 dark:bg-gradient-to-br dark:from-gray-800/90 dark:to-gray-900/90 backdrop-blur-xl rounded-3xl p-8 border border-gray-200 dark:border-gray-700/50 group-hover:border-gray-300 dark:group-hover:border-gray-600 shadow-sm dark:shadow-none transition-all duration-300">
                 {/* Shine Effect */}
                 <div className="absolute inset-0 rounded-3xl overflow-hidden">
                   <motion.div
@@ -232,7 +276,7 @@ function Skills() {
                   >
                     <div className={`absolute inset-0 bg-gradient-to-br ${skill.gradient} rounded-2xl blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-300`} />
                     <div className={`relative w-20 h-20 rounded-2xl bg-gradient-to-br ${skill.gradient} p-0.5 ${skill.shadow} group-hover:shadow-2xl transition-shadow duration-300`}>
-                      <div className={`w-full h-full rounded-2xl ${skill.isDark ? 'bg-white' : 'bg-gray-950'} p-3 flex items-center justify-center`}>
+                      <div className={`w-full h-full rounded-2xl ${skill.isDark ? 'bg-white' : 'bg-gray-100 dark:bg-gray-950'} p-3 flex items-center justify-center`}>
                         <img
                           src={skill.image}
                           alt={skill.name}
@@ -244,7 +288,7 @@ function Skills() {
 
                   {/* Skill Name */}
                   <div className="text-center space-y-1">
-                    <h3 className="text-white font-bold text-base group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
+                    <h3 className="text-gray-900 dark:text-white font-bold text-base group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:to-pink-500 dark:group-hover:from-purple-400 dark:group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
                       {skill.name}
                     </h3>
                   </div>

@@ -48,10 +48,13 @@ export default function BackToTop() {
 
         rounded-full
 
-        bg-bg-gray-800
-        text-white
+        bg-white
+        dark:bg-gray-800
+        text-gray-900
+        dark:text-white
         border-[0.5px]
-        border-gray-600
+        border-gray-300
+        dark:border-gray-600
 
         shadow-lg
         shadow-cyan-300/20
@@ -61,8 +64,9 @@ export default function BackToTop() {
         ease-in-out
 
         hover:bg-yellow-500
+        hover:text-black
         cursor-pointer
-        active:yellow-95
+        active:bg-yellow-600
 
         ${
           showButton

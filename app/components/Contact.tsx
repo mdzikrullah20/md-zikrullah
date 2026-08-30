@@ -70,7 +70,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative min-h-screen py-16 px-4 sm:px-6 lg:px-8 bg-[#020617] overflow-hidden"
+      className="relative min-h-screen py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-[#020617] overflow-hidden transition-colors duration-300"
     >
       {/* Animated Background */}
       <div className="absolute inset-0 pointer-events-none">
@@ -99,10 +99,10 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12 sm:mb-20"
         >
-          <h2 className="text-4xl sm:text-5xl font-black text-white mb-4 leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 text-gray-900 dark:text-white leading-tight">
             Contact
-          </h2>
-          <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
+          </h1>
+          <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
             Have a project in mind? Let&apos;s create something amazing together.
           </p>
         </motion.div>
@@ -118,11 +118,11 @@ export default function Contact() {
           >
             <form onSubmit={handleSubmit} className="relative group">
               <div className="absolute -inset-0.5 to-blue-500 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
-              <div className="relative bg-gray-800/90 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-gray-700/50">
+              <div className="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-gray-200 dark:border-gray-700/50 shadow-lg dark:shadow-none">
                 <div className="space-y-6">
                   {/* Name */}
                   <div>
-                    <label htmlFor="name" className="block text-gray-300 font-medium mb-2">
+                    <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 font-medium mb-2">
                       Your Name
                     </label>
                     <input
@@ -133,13 +133,13 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       placeholder="M Zikks"
-                      className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 transition-all"
+                      className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 transition-all"
                     />
                   </div>
 
                   {/* Email */}
                   <div>
-                    <label htmlFor="email" className="block text-gray-300 font-medium mb-2">
+                    <label htmlFor="email" className="block text-gray-700 dark:text-gray-300 font-medium mb-2">
                       Your Email
                     </label>
                     <input
@@ -150,13 +150,13 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       placeholder="zikks@example.com"
-                      className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 transition-all"
+                      className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 transition-all"
                     />
                   </div>
 
                   {/* Mobile Number */}
                   <div>
-                    <label htmlFor="number" className="block text-gray-300 font-medium mb-2">
+                    <label htmlFor="number" className="block text-gray-700 dark:text-gray-300 font-medium mb-2">
                       Mobile Number
                     </label>
                     <input
@@ -170,13 +170,13 @@ export default function Contact() {
                       maxLength={10}
                       required
                       placeholder="Enter number"
-                      className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 transition-all"
+                      className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 transition-all"
                     />
                   </div>
 
                   {/* Message */}
                   <div>
-                    <label htmlFor="message" className="block text-gray-300 font-medium mb-2">
+                    <label htmlFor="message" className="block text-gray-700 dark:text-gray-300 font-medium mb-2">
                       Your Message
                     </label>
                     <textarea
@@ -186,7 +186,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       placeholder="What would you like to build?"
-                      className="w-full px-4 py-3 bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 min-h-[150px] transition-all resize-none"
+                      className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900/50 border border-[#ffae00b3] rounded-xl text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-[#FFAF00] focus:ring-2 focus:ring-[#FFAF00]/20 min-h-[150px] transition-all resize-none"
                     />
                   </div>
 
@@ -220,7 +220,7 @@ export default function Contact() {
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
-                      className="p-4 bg-green-500/10 border border-green-500/30 rounded-xl text-green-400 text-center"
+                      className="p-4 bg-green-100 dark:bg-green-500/10 border border-green-300 dark:border-green-500/30 rounded-xl text-green-700 dark:text-green-400 text-center"
                     >
                       ✓ Opening WhatsApp! Please send the pre-filled message.
                     </motion.div>

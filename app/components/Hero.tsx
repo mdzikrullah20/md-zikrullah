@@ -74,7 +74,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen pt-20 pb-12 flex flex-col justify-center items-center overflow-hidden bg-[#020617]"
+      className="relative min-h-screen pt-20 pb-12 flex flex-col justify-center items-center overflow-hidden bg-slate-50 dark:bg-[#020617] transition-colors duration-300"
     >
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hiddens">
@@ -105,7 +105,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="mb-3 lg:mb-4"
           >
-            <span className="text-white text-xl font-semibold">
+            <span className="text-gray-900 dark:text-white text-xl font-semibold">
               Hello, It&lsquo;s Me
             </span>
           </motion.div>
@@ -114,7 +114,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-3xl text-white sm:text-4xl lg:text-5xl font-bold mb-3 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent leading-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 text-gray-900 dark:text-white leading-tight"
           >
             Md Zikrullah
           </motion.h1>
@@ -125,12 +125,12 @@ export default function Hero() {
             transition={{ delay: 0.5, duration: 1 }}
             className=" flex justify-start mb-3 lg:mb-4  gap-2"
           >
-            <span className="text-xl sm:text-2xl md:text-3xl font-bold text-white">
+            <span className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
               And I&lsquo;m a
             </span>
-            <span className="text-xl sm:text-2xl md:text-3xl font-bold text-yellow-500">
+            <span className="text-xl sm:text-2xl md:text-3xl font-bold text-amber-600 dark:text-yellow-500">
               {text}
-              <span className="animate-pulse text-purple-400">|</span>
+              <span className="animate-pulse text-purple-500 dark:text-purple-400">|</span>
             </span>
           </motion.div>
 
@@ -138,7 +138,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 1 }}
-            className="text-base sm:text-lg md:text-xl text-gray-400 max-w-xl lg:mx-0 mb-4 lg:mb-4 leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-xl lg:mx-0 mb-4 lg:mb-4 leading-relaxed"
           >
             Crafting beautiful, performant web experiences with modern
             technologies. Passionate about clean code and user-centric design.
@@ -162,7 +162,7 @@ export default function Hero() {
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-[#FFAF00] text-white rounded-full font-semibold hover:bg-purple-400/10 transition-all text-sm sm:text-base"
+              className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-[#FFAF00] text-gray-900 dark:text-white rounded-full font-semibold hover:bg-purple-400/10 transition-all text-sm sm:text-base"
             >
               Get In Touch
             </motion.a>
@@ -182,7 +182,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
-                className="p-3 lg:mb-4 bg-gray-800/50 backdrop-blur-sm rounded-full text-gray-400 hover:text-purple-400 hover:bg-gray-700/50 transition-all border border-gray-700"
+                className="p-3 lg:mb-4 bg-gray-200/60 dark:bg-gray-800/50 backdrop-blur-sm rounded-full text-gray-600 dark:text-gray-400 hover:text-purple-500 dark:hover:text-purple-400 hover:bg-gray-300/60 dark:hover:bg-gray-700/50 transition-all border border-gray-300 dark:border-gray-700"
                 aria-label={link.label}
               >
                 {link.icon}
@@ -237,7 +237,7 @@ export default function Hero() {
           onClick={scrollToProjects}
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
-          className="cursor-pointer text-yellow-400 hover:text-purple-300 transition-colors"
+          className="cursor-pointer text-amber-600 dark:text-yellow-400 hover:text-purple-500 dark:hover:text-purple-300 transition-colors"
           aria-label="Scroll down"
         >
           <ArrowDown className="w-8 h-8" />
@@ -247,17 +247,17 @@ export default function Hero() {
       {/* Decorative code */}
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 0.1 }}
+        animate={{ opacity: 0.15 }}
         transition={{ delay: 2, duration: 2 }}
-        className="absolute top-20 left-10 text-purple-300 font-mono text-sm hidden md:block"
+        className="absolute top-20 left-10 text-purple-600 dark:text-purple-300 font-mono text-sm hidden md:block"
       >
         {"<developer>"}
       </motion.div>
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 0.1 }}
+        animate={{ opacity: 0.15 }}
         transition={{ delay: 2.2, duration: 2 }}
-        className="absolute bottom-20 right-10 text-purple-300 font-mono text-sm hidden md:block"
+        className="absolute bottom-20 right-10 text-purple-600 dark:text-purple-300 font-mono text-sm hidden md:block"
       >
         {"</developer>"}
       </motion.div>

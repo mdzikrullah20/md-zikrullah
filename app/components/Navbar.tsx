@@ -4,12 +4,13 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Home, User, Briefcase, Code, Mail, Sun, Moon } from 'lucide-react';
 import Link from 'next/link';
+import { useTheme } from './ThemeContextType';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const { isDarkMode, toggleTheme } = useTheme();
 
   const navLinks = [
     { name: 'Home', href: '#home', icon: <Home className="w-4 h-4" /> },
@@ -76,6 +77,47 @@ export default function Navbar() {
     };
   }, [isOpen]);
 
+  // Updated Theme Toggle Button Icon
+  const ThemeToggle = ({ className = '' }: { className?: string }) => (
+    <motion.button
+      onClick={toggleTheme}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.9 }}
+      aria-label="Toggle theme"
+      className={`p-2.5  transition-all duration-300 cursor-pointer ${
+        isDarkMode
+          ? ''
+          : ''
+      } ${className}`}
+    >
+      <AnimatePresence mode="wait" initial={false}>
+        {isDarkMode ? (
+          <motion.div
+            key="sun-icon"
+            initial={{ scale: 0.5, rotate: -90, opacity: 0 }}
+            animate={{ scale: 1, rotate: 0, opacity: 1 }}
+            exit={{ scale: 0.5, rotate: 90, opacity: 0 }}
+            transition={{ duration: 0.25, ease: 'easeOut' }}
+            className="flex items-center justify-center"
+          >
+            <Sun className="w-5 h-5 fill-amber-400/20" />
+          </motion.div>
+        ) : (
+          <motion.div
+            key="moon-icon"
+            initial={{ scale: 0.5, rotate: 90, opacity: 0 }}
+            animate={{ scale: 1, rotate: 0, opacity: 1 }}
+            exit={{ scale: 0.5, rotate: -90, opacity: 0 }}
+            transition={{ duration: 0.25, ease: 'easeOut' }}
+            className="flex items-center justify-center"
+          >
+            <Moon className="w-5 h-5 fill-indigo-600/20" />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.button>
+  );
+
   return (
     <>
       <motion.nav
@@ -84,7 +126,9 @@ export default function Navbar() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-gray-900/95 backdrop-blur-xl shadow-lg shadow-purple-500/5 '
+            ? isDarkMode
+              ? 'bg-gray-900/95 backdrop-blur-xl shadow-lg shadow-purple-500/5'
+              : 'bg-white/95 backdrop-blur-xl shadow-lg shadow-gray-300/40'
             : 'bg-transparent'
         }`}
       >
@@ -98,7 +142,7 @@ export default function Navbar() {
             >
               <Link
                 href="/"
-                className="text-xl md:text-3xl font-bold text-white"
+                className={`text-xl md:text-3xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}
               > 
                 Portfolio
               </Link>
@@ -116,8 +160,10 @@ export default function Navbar() {
                   whileHover={{ y: -2 }}
                   className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg ${
                     activeSection === link.href.substring(1)
-                      ? 'text-white'
-                      : 'text-gray-300 hover:bg-gray-800/50 hover:text-yellow-400 cursor-pointer'
+                      ? isDarkMode ? 'text-white' : 'text-gray-900'
+                      : isDarkMode
+                        ? 'text-gray-300 hover:bg-gray-800/50 hover:text-yellow-400 cursor-pointer'
+                        : 'text-gray-600 hover:bg-gray-100 hover:text-purple-600 cursor-pointer'
                   }`}
                 >
                   {link.name}
@@ -143,15 +189,15 @@ export default function Navbar() {
 
             {/* Right Side - CTA & Theme Toggle */}
             <div className="hidden md:flex items-center gap-4">
-              {/* Theme Toggle */}
-            
+              <ThemeToggle />
 
-              {/* CTA Button */}
               <motion.button
                 onClick={() => scrollToSection('#contact')}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="relative px-6 py-2.5 cursor-pointer border-1 text-white text-sm font-semibold rounded-full overflow-hidden group hover:bg-yellow-600 hover:border-none "
+                className={`relative px-6 py-2.5 cursor-pointer border-1 text-sm font-semibold rounded-full overflow-hidden group hover:bg-yellow-600 hover:border-none ${
+                  isDarkMode ? 'text-white' : 'text-gray-900 border-gray-300'
+                }`}
               >
                 <span className="relative z-10">Hire Me</span>
                 <motion.div
@@ -163,37 +209,44 @@ export default function Navbar() {
               </motion.button>
             </div>
 
-            {/* Mobile Menu Button */}
-            <motion.button
-              whileTap={{ scale: 0.9 }}
-              onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 text-gray-300 hover:text-white transition-colors rounded-lg hover:bg-gray-800/50"
-              aria-label="Toggle menu"
-            >
-              <AnimatePresence mode="wait">
-                {isOpen ? (
-                  <motion.div
-                    key="close"
-                    initial={{ rotate: -90, opacity: 0 }}
-                    animate={{ rotate: 0, opacity: 1 }}
-                    exit={{ rotate: 90, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <X className="w-6 h-6" />
-                  </motion.div>
-                ) : (
-                  <motion.div
-                    key="menu"
-                    initial={{ rotate: 90, opacity: 0 }}
-                    animate={{ rotate: 0, opacity: 1 }}
-                    exit={{ rotate: -90, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <Menu className="w-6 h-6" />
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.button>
+            {/* Mobile: Theme Toggle + Menu Button */}
+            <div className="md:hidden flex items-center gap-3">
+              <ThemeToggle />
+              <motion.button
+                whileTap={{ scale: 0.9 }}
+                onClick={() => setIsOpen(!isOpen)}
+                className={`p-2 transition-colors rounded-lg ${
+                  isDarkMode
+                    ? 'text-gray-300 hover:text-white hover:bg-gray-800/50'
+                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                }`}
+                aria-label="Toggle menu"
+              >
+                <AnimatePresence mode="wait">
+                  {isOpen ? (
+                    <motion.div
+                      key="close"
+                      initial={{ rotate: -90, opacity: 0 }}
+                      animate={{ rotate: 0, opacity: 1 }}
+                      exit={{ rotate: 90, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <X className="w-6 h-6" />
+                    </motion.div>
+                  ) : (
+                    <motion.div
+                      key="menu"
+                      initial={{ rotate: 90, opacity: 0 }}
+                      animate={{ rotate: 0, opacity: 1 }}
+                      exit={{ rotate: -90, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <Menu className="w-6 h-6" />
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.button>
+            </div>
           </div>
         </div>
       </motion.nav>
@@ -202,7 +255,6 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <>
-            {/* Backdrop */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -212,30 +264,35 @@ export default function Navbar() {
               className="fixed inset-0 bg-black/80 backdrop-blur-sm z-40 md:hidden"
             />
 
-            {/* Mobile Menu */}
             <motion.div
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-[280px] sm:w-[320px] bg-gray-900/98 backdrop-blur-xl border-l border-gray-800/50 shadow-2xl z-50 md:hidden overflow-y-auto"
+              className={`fixed top-0 right-0 bottom-0 w-[280px] sm:w-[320px] backdrop-blur-xl shadow-2xl z-50 md:hidden overflow-y-auto border-l ${
+                isDarkMode
+                  ? 'bg-gray-900/98 border-gray-800/50'
+                  : 'bg-white/98 border-gray-200'
+              }`}
             >
               <div className="flex flex-col h-full">
-                {/* Mobile Menu Header */}
-                <div className="flex items-center justify-between p-6 border-b border-gray-800/50">
-                  <span className="text-xl text-white font-stretch-extra-condensed">
+                <div className={`flex items-center justify-between p-6 border-b ${isDarkMode ? 'border-gray-800/50' : 'border-gray-200'}`}>
+                  <span className={`text-xl font-stretch-extra-condensed ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
                     Menu
                   </span>
                   <motion.button
                     whileTap={{ scale: 0.9 }}
                     onClick={() => setIsOpen(false)}
-                    className="p-2 text-gray-400 hover:text-white transition-colors rounded-lg hover:bg-gray-800/50"
+                    className={`p-2 transition-colors rounded-lg ${
+                      isDarkMode
+                        ? 'text-gray-400 hover:text-white hover:bg-gray-800/50'
+                        : 'text-gray-500 hover:text-gray-900 hover:bg-gray-100'
+                    }`}
                   >
                     <X className="w-5 h-5" />
                   </motion.button>
                 </div>
 
-                {/* Mobile Menu Links */}
                 <div className="flex-1 px-6 py-8">
                   <div className="space-y-2">
                     {navLinks.map((link, index) => (
@@ -248,8 +305,10 @@ export default function Navbar() {
                         whileTap={{ scale: 0.95 }}
                         className={`w-full flex items-center gap-4 px-4 py-3 rounded-xl transition-all duration-300 ${
                           activeSection === link.href.substring(1)
-                            ? 'bg-gradient-to-r text-white'
-                            : 'text-gray-300 hover:bg-gray-800/50 hover:text-yellow-400 cursor-pointer'
+                            ? isDarkMode ? 'bg-gradient-to-r text-white' : 'bg-gradient-to-r text-gray-900 bg-gray-100'
+                            : isDarkMode
+                              ? 'text-gray-300 hover:bg-gray-800/50 hover:text-yellow-400 cursor-pointer'
+                              : 'text-gray-600 hover:bg-gray-100 hover:text-purple-600 cursor-pointer'
                         }`}
                       >
                         <span className={activeSection === link.href.substring(1) ? 'text-gray-400' : 'text-gray-500'}>
@@ -266,24 +325,22 @@ export default function Navbar() {
                     ))}
                   </div>
 
-                  {/* Mobile CTA */}
                   <motion.button
                     onClick={() => scrollToSection('#contact')}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
                     whileTap={{ scale: 0.95 }}
-                    className="w-full mt-8 px-6 py-2 text-white font-semibold rounded-xl shadow-lg cursor-pointer"
+                    className={`w-full mt-8 px-6 py-2 font-semibold rounded-xl shadow-lg cursor-pointer ${
+                      isDarkMode ? 'text-white bg-gray-800' : 'text-gray-900 bg-gray-100'
+                    }`}
                   >
                     Hire Me
                   </motion.button>
-
-                  {/* Theme Toggle Mobile */}
                 </div>
 
-                {/* Mobile Menu Footer */}
-                <div className="p-6 border-t border-gray-800/50">
-                  <p className="text-sm text-gray-500 text-center">
+                <div className={`p-6 border-t ${isDarkMode ? 'border-gray-800/50' : 'border-gray-200'}`}>
+                  <p className={`text-sm text-center ${isDarkMode ? 'text-gray-500' : 'text-gray-400'}`}>
                     © 2025 Esha. All rights reserved.
                   </p>
                 </div>

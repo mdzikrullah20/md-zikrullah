@@ -2,6 +2,7 @@
 
 import Head from "next/head";
 
+import { ThemeProvider } from "./components/ThemeContextType";
 import Hero from "./components/Hero";
 import About from "./components/about";
 import Skills from "./components/Skills";
@@ -11,7 +12,7 @@ import BackToTop from "./components/BackToTop";
 
 export default function Home() {
   return (
-    <>
+    <ThemeProvider>
       <Head>
         {/* ============================= */}
         {/* BASIC SEO */}
@@ -195,7 +196,7 @@ export default function Home() {
       {/* MAIN WEBSITE */}
       {/* ============================= */}
 
-      <main className="bg-zinc-50 dark:bg-black font-sans">
+      <main className="bg-zinc-50 dark:bg-black font-sans transition-colors duration-300">
 
         {/* Hero */}
         <Hero />
@@ -219,6 +220,6 @@ export default function Home() {
       {/* ============================= */}
 
       <BackToTop />
-    </>
+    </ThemeProvider>
   );
 }

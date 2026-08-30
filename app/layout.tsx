@@ -1,8 +1,9 @@
 // app/layout.tsx
 import type { Metadata } from "next";
-import { Geist, Geist_Mono ,Mulish } from "next/font/google";
+import { Geist, Geist_Mono, Mulish } from "next/font/google";
 import "./globals.css";
 
+import { ThemeProvider } from "./components/ThemeContextType";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import SplashCursor from "./components/SplashCursor";
@@ -15,7 +16,7 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-}); 
+});
 const mulish = Mulish({
   variable: "--font-mulish",
   subsets: ["latin"],
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     "JavaScript",
     "TypeScript",
   ],
-  authors: [{ name: "Md Zikrullah", }],
+  authors: [{ name: "Md Zikrullah" }],
   openGraph: {
     title: "Md Zikrullah | Software Developer",
     description:
@@ -47,7 +48,6 @@ export const metadata: Metadata = {
         alt: "Md Zikrullah Portfolio",
       },
     ],
- 
   },
   twitter: {
     card: "summary_large_image",
@@ -66,17 +66,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    // suppressHydrationWarning: ThemeProvider adds the 'dark' class client-side after mount,
+    // so the server-rendered <html> and the client's first render briefly differ. This is expected.
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${mulish.variable} antialiased relative`}
       >
-        {/* 🌀 Background Splash Cursor Effect */}
-        <SplashCursor />
+        <ThemeProvider>
+          {/* 🌀 Background Splash Cursor Effect */}
+          <SplashCursor />
 
-        {/* 🌐 App Structure */}
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+          {/* 🌐 App Structure */}
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

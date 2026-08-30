@@ -62,7 +62,7 @@ export default function AboutPage() {
   return (
     <section
       id="about"
-      className="relative min-h-screen pt-20 pb-12 bg-[#0F172A] overflow-hidden"
+      className="relative min-h-screen pt-20 pb-12 bg-slate-50 dark:bg-[#0F172A] overflow-hidden transition-colors duration-300"
     >
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden ">
@@ -92,11 +92,12 @@ export default function AboutPage() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h1 className="text-4xl text-white md:text-5xl font-bold mt-2 mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 text-gray-900 dark:text-white leading-tight">
+
                 About Me
               </h1>
-              <p className="flex items-center gap-2 text-gray-400 text-sm">
-                <MapPin className="w-4 h-4 text-purple-400" />
+              <p className="flex items-center gap-2 text-gray-600 dark:text-gray-400 text-sm">
+                <MapPin className="w-4 h-4 text-purple-500 dark:text-purple-400" /> 
                 Hyderabad, India
               </p>
             </motion.div>
@@ -106,7 +107,7 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="text-base text-gray-300 leading-relaxed"
+              className="text-base text-gray-700 dark:text-gray-300 leading-relaxed"
             >
               Hi, I&lsquo;m Md Zikrullah — a passionate Full-Stack Developer and
               Problem Solver who loves crafting beautiful, high-performance web
@@ -120,7 +121,7 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
-              className="text-gray-300 leading-relaxed text-base"
+              className="text-gray-700 dark:text-gray-300 leading-relaxed text-base"
             >
               My journey began with curiosity about how things work behind the
               scenes, and today, I turn ideas into impactful digital
@@ -135,10 +136,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="space-y-4 pt-4"
             >
-              <h3 className="text-2xl font-semibold text-white">What I Do</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">What I Do</h3>
               <ul className="space-y-3">
-                <li className="flex items-start text-gray-300">
-                  <span className="text-purple-400 mr-3 mt-3 flex items-center">
+                <li className="flex items-start text-gray-700 dark:text-gray-300">
+                  <span className="text-purple-500 dark:text-purple-400 mr-3 mt-3 flex items-center">
                     <Image
                       src="/Images/arrow-circle.svg"
                       alt="Arrow icon"
@@ -149,15 +150,15 @@ export default function AboutPage() {
                   </span>
 
                   <span>
-                    <strong className="text-white">
+                    <strong className="text-gray-900 dark:text-white">
                       Frontend Development:
                     </strong>{" "}
-                    uilding responsive, dynamic, and modern UIs using React.js,
+                    Building responsive, dynamic, and modern UIs using React.js,
                     Next.js, and Tailwind CSS
                   </span>
                 </li>
-                <li className="flex items-start text-gray-300">
-                 <span className="ext-purple-400 mr-3 mt-3 flex items-center">
+                <li className="flex items-start text-gray-700 dark:text-gray-300">
+                 <span className="text-purple-500 dark:text-purple-400 mr-3 mt-3 flex items-center">
                     <Image
                       src="/Images/arrow-circle.svg"
                       alt="Arrow icon"
@@ -167,13 +168,13 @@ export default function AboutPage() {
                     />
                   </span>
                   <span>
-                    <strong className="text-white">Backend Development:</strong>{" "}
+                    <strong className="text-gray-900 dark:text-white">Backend Development:</strong>{" "}
                     Ceveloping robust APIs and scalable server-side applications
                     using Node.js
                   </span>
                 </li>
-                <li className="flex items-start text-gray-300">
-                   <span className="text-purple-400 mr-3 mt-3 flex items-center">
+                <li className="flex items-start text-gray-700 dark:text-gray-300">
+                   <span className="text-purple-500 dark:text-purple-400 mr-3 mt-3 flex items-center">
                     <Image
                       src="/Images/arrow-circle.svg"
                       alt="Arrow icon"
@@ -183,7 +184,7 @@ export default function AboutPage() {
                     />
                   </span>
                   <span>
-                    <strong className="text-white">UI/UX Design:</strong>{" "}
+                    <strong className="text-gray-900 dark:text-white">UI/UX Design:</strong>{" "}
                     Designing clean, user-centered interfaces that enhance
                     usability and engagement
                   </span>
@@ -198,7 +199,7 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="pt-4"
             >
-              <h3 className="text-2xl font-semibold text-white mb-4">
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 Tech Stack
               </h3>
               <div className="flex flex-wrap gap-3">
@@ -210,10 +211,10 @@ export default function AboutPage() {
                     transition={{ duration: 0.3, delay: 0.6 + index * 0.1 }}
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.1, y: -5 }}
-                    className="px-4 py-2 bg-gray-800/50 backdrop-blur-sm border border-gray-700 
-                             rounded-lg text-gray-300 text-sm font-medium 
-                             hover:border-purple-500 hover:text-purple-400 transition-all 
-                             cursor-default shadow-lg"
+                    className="px-4 py-2 bg-gray-100 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-300 dark:border-gray-700 
+                             rounded-lg text-gray-700 dark:text-gray-300 text-sm font-medium 
+                             hover:border-purple-500 hover:text-purple-500 dark:hover:text-purple-400 transition-all 
+                             cursor-default shadow-sm dark:shadow-lg"
                   >
                     {tech}
                   </motion.span>
@@ -240,7 +241,7 @@ export default function AboutPage() {
                 href="#projects"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                 className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-[#FFAF00] text-white rounded-full font-semibold hover:bg-purple-400/10 transition-all text-sm sm:text-base"
+                 className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-[#FFAF00] text-gray-900 dark:text-white rounded-full font-semibold hover:bg-purple-400/10 transition-all text-sm sm:text-base"
               >
                 View Projects
               </motion.a>
@@ -310,7 +311,7 @@ export default function AboutPage() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h2 className="text-3xl font-bold text-center mb-12 cursor-pointer text-white">
+          <h2 className="text-3xl font-bold text-center mb-12 cursor-pointer text-gray-900 dark:text-white">
             Why Work With Me
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -322,23 +323,23 @@ export default function AboutPage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -8, scale: 1.02 }}
-                className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl 
-                         p-6 hover:border-yellow-500/50 transition-all group cursor-pointer"
+                className="bg-white dark:bg-gray-900/50 backdrop-blur-sm border border-gray-200 dark:border-gray-800 rounded-xl 
+                         p-6 hover:border-yellow-500/50 transition-all group cursor-pointer shadow-sm dark:shadow-none"
               >
                 <div
-                  className="w-12 h-12 bg-yellow-900 from-yellow-500/20 to-blue-500/20
-                              rounded-lg flex items-center justify-center mb-4 text-white 
+                  className="w-12 h-12 bg-yellow-100 dark:bg-yellow-900 from-yellow-500/20 to-blue-500/20
+                              rounded-lg flex items-center justify-center mb-4 text-gray-900 dark:text-white 
                               group-hover:scale-110 transition-transform"
                 >
                   {feature.icon}
                 </div>
                 <h3
-                  className="text-xl font-semibold text-white mb-2 group-hover:text-yellow-400 
+                  className="text-xl font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-yellow-600 dark:group-hover:text-yellow-400 
                              transition-colors"
                 >
                   {feature.title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>
@@ -350,17 +351,17 @@ export default function AboutPage() {
       {/* Decorative code tags */}
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 0.1 }}
+        animate={{ opacity: 0.15 }}
         transition={{ delay: 1, duration: 2 }}
-        className="absolute top-32 left-10 text-purple-300 font-mono text-sm hidden xl:block"
+        className="absolute top-32 left-10 text-purple-600 dark:text-purple-300 font-mono text-sm hidden xl:block"
       >
         {"<about>"}
       </motion.div>
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 0.1 }}
+        animate={{ opacity: 0.15 }}
         transition={{ delay: 1.2, duration: 2 }}
-        className="absolute bottom-32 right-10 text-purple-300 font-mono text-sm hidden xl:block"
+        className="absolute bottom-32 right-10 text-purple-600 dark:text-purple-300 font-mono text-sm hidden xl:block"
       >
         {"</about>"}
       </motion.div>

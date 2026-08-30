@@ -11,13 +11,13 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-gray-400">
+    <footer className="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-400 transition-colors duration-300">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-3">
           
           {/* Column 1: Personal Branding */}
           <div className="col-span-2 lg:col-span-1">
-            <h3 className="text-2xl font-bold text-white mb-2">Md Zikrullah | Developer</h3>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Md Zikrullah | Developer</h3>
             <p className="mt-2 text-sm">
               Passionate about crafting interactive and scalable web applications using modern technologies.
             </p>
@@ -31,7 +31,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={link.label}
-                  className="hover:text-blue-400 transition duration-150 flex items-center gap-1"
+                  className="hover:text-blue-500 dark:hover:text-blue-400 transition duration-150 flex items-center gap-1"
                 >
                   {link.icon}
                 </a>
@@ -41,15 +41,15 @@ const Footer = () => {
 
           {/* Column 2: Portfolio Navigation */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Portfolio</h4>
+            <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Portfolio</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/projects" className="hover:text-white transition duration-150 ease-in-out">
+                <Link href="/projects" className="hover:text-gray-900 dark:hover:text-white transition duration-150 ease-in-out">
                   Featured Projects
                 </Link>
               </li>
               <li>
-                <Link href="/skills" className="hover:text-white transition duration-150 ease-in-out">
+                <Link href="/skills" className="hover:text-gray-900 dark:hover:text-white transition duration-150 ease-in-out">
                   Skills & Tech Stack
                 </Link>
               </li>
@@ -58,7 +58,7 @@ const Footer = () => {
                   href="/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white transition duration-150 ease-in-out"
+                  className="hover:text-gray-900 dark:hover:text-white transition duration-150 ease-in-out"
                 >
                   Download Resume
                 </a>
@@ -68,20 +68,20 @@ const Footer = () => {
 
           {/* Column 3: Explore More */}
           <div className="col-span-2 md:col-span-1 lg:col-span-1">
-            <h4 className="text-lg font-semibold text-white mb-4">Explore More</h4>
+            <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Explore More</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/blog" className="hover:text-white transition duration-150 ease-in-out">
+                <Link href="/blog" className="hover:text-gray-900 dark:hover:text-white transition duration-150 ease-in-out">
                   Technical Blog
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-white transition duration-150 ease-in-out">
+                <Link href="/contact" className="hover:text-gray-900 dark:hover:text-white transition duration-150 ease-in-out">
                   Contact Me
                 </Link>
               </li>
               <li>
-                <Link href="/colophon" className="hover:text-white transition duration-150 ease-in-out">
+                <Link href="/colophon" className="hover:text-gray-900 dark:hover:text-white transition duration-150 ease-in-out">
                   Site Colophon
                 </Link>
               </li>
@@ -89,13 +89,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr className="my-8 border-gray-700" />
+        <hr className="my-8 border-gray-300 dark:border-gray-700" />
 
         {/* Footer Bottom */}
         <div className="text-center text-sm">
           <p>
             &copy; {new Date().getFullYear()} Md Zikrullah. All rights reserved. Crafted with{" "}
-            <span className="text-blue-400">Next.js</span> & <span className="text-teal-400">Tailwind CSS</span>.
+            <span className="text-blue-600 dark:text-blue-400">Next.js</span> & <span className="text-teal-600 dark:text-teal-400">Tailwind CSS</span>.
           </p>
         </div>
       </div>
